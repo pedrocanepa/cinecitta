@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    font-family: 'Proxima Nova','Source Sans Pro','Roboto', sans-serif;
+    font-family: 'Proxima Nova', 'Source Sans Pro', 'Roboto', sans-serif;
     margin: 0;
 }
 
@@ -35,7 +35,7 @@ p {
 }
 
 button {
-    font-family: 'Proxima Nova','Source Sans Pro','Roboto', sans-serif;
+    font-family: 'Proxima Nova', 'Source Sans Pro', 'Roboto', sans-serif;
     font-size: 1.25em;
     font-weight: bold;
     padding: 10px 30px;
@@ -121,7 +121,7 @@ header a:hover {
     top: 0;
     bottom: 0;
     z-index: -1;
-  }
+}
 
 #hero h1 {
     color: #FFF;
@@ -223,63 +223,80 @@ footer .container {
     align-items: flex-end;
 }
 
-@media (min-width: 720px){
-    header{
+@media (min-width: 720px) {
+    header {
         position: fixed;
         width: 100%;
     }
-    header .container{
+
+    header .container {
         flex-direction: row;
         justify-content: space-between;
 
     }
-}    
-    header nav{
-        flex-direction: row;
-        padding-bottom: 0;
-        padding-right: 20px;
-    }
-    #hero h1{
-        font-size: 5em;
-    }
-    #QuienesSomos .container{
-        display: flex;
-        justify-content: space-evenly;
-    }
-    #QuienesSomos .texto{
-        width: 50%;
-        max-width: 600px;
-        text-align: initial;
-        padding-left: 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+}
 
-    #QuienesSomos h2{
-        margin-top: 0px;
-    }
+header nav {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+}
 
-    #QuienesSomos .img-container{
-        background-image: url("./img/uno.png");
-        background-size: cover;
-        background-position: center center;
-        height: 600px;
-        width: 400px; 
-    }
+#hero h1 {
+    font-size: 5em;
+}
 
-    #registro {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        color: #FFF;
-        flex-direction: column;
-        height: 100vh;
-        background-image: linear-gradient(0deg,
-                rgba(0, 0, 51, 0.5),
-                rgba(0, 0, 51, 1)), url("./img/matrixpill.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-    }
+#QuienesSomos .container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#QuienesSomos .texto {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#QuienesSomos h2 {
+    margin-top: 0px;
+}
+
+#QuienesSomos .img-container {
+    background-image: url("./img/uno.png");
+    background-size: cover;
+    background-position: center center;
+    height: 600px;
+    width: 400px;
+}
+
+#registro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFF;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 51, 0.25),
+            rgba(0, 0, 51, 1)), url("./img/matrixpill.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+form {
+    padding-left: 5vmax;
+    padding-right: 5vmax;
+    padding-top: 5vmin;
+    padding-bottom: 5vmin;
+    border-radius: 25px;
+    align-items: left;
+    text-align: left;
+    font-weight: normal;
+    background-color: rgba(0, 0, 51, 0.8);
+}
