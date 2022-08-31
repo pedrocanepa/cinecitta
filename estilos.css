@@ -47,7 +47,7 @@ button {
 }
 
 button:hover {
-    background-color: #F40;
+    background-color: #F63;
 }
 
 .container {
@@ -92,7 +92,7 @@ header a {
 }
 
 header a:hover {
-    color: #F40;
+    color: #F63;
 }
 
 #film {
