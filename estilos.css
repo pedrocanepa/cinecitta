@@ -94,20 +94,33 @@ header a:hover {
     color: #DDD;
 }
 
-#hero {
+#film {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    color: #FFF;
     flex-direction: column;
-    height: 90vh;
+    height: 100vh;
     background-image: linear-gradient(0deg,
-            #003,
-            rgba(20, 15, 15, 0.5)), url("hero.png");
+            rgba(0, 0, 51, 0),
+            rgba(0, 0, 51, 1));
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
 
 #hero h1 {
     color: #FFF;
@@ -120,6 +133,13 @@ header a:hover {
 #QuienesSomos .container {
     text-align: center;
     padding: 200px 12px;
+    color: #FFF;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 51, 1),
+            rgba(0, 0, 51, 0));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 
