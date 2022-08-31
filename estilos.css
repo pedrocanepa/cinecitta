@@ -59,8 +59,13 @@ button:hover {
     color: #FFF;
 }
 
+.emphasis {
+    color: #F63;
+    font-weight: bold;
+}
+
 header {
-    background-color: #003;
+    background-color: #002;
 }
 
 header .logo {
@@ -104,8 +109,8 @@ header a:hover {
     flex-direction: column;
     height: 100vh;
     background-image: linear-gradient(0deg,
-            rgba(0, 0, 51, 0),
-            rgba(0, 0, 51, 1));
+            rgba(0, 0, 34, 0.1),
+            rgba(0, 0, 34, 1));
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -136,8 +141,8 @@ header a:hover {
     padding: 200px 12px;
     color: #FFF;
     background-image: linear-gradient(0deg,
-            rgba(0, 0, 51, 1),
-            rgba(0, 0, 51, 0));
+            rgba(0, 0, 34, 1),
+            rgba(0, 0, 34, 0.1));
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -145,7 +150,7 @@ header a:hover {
 
 
 #navegar {
-    background-color: #003;
+    background-color: #002;
     color: rgb(255, 255, 255);
     text-align: center;
 }
@@ -249,20 +254,23 @@ header nav {
 #QuienesSomos .container {
     display: flex;
     justify-content: space-evenly;
+    padding-top: -100%;
 }
 
 #QuienesSomos .texto {
     width: 50%;
     max-width: 600px;
     text-align: initial;
-    padding-left: 50px;
+    padding: 2.5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: rgba(0, 0, 34, 0.7);
+    border-radius: 25px;
 }
 
 #QuienesSomos h2 {
-    margin-top: 0px;
+    margin-top: -50%;
 }
 
 #QuienesSomos .img-container {
@@ -271,6 +279,8 @@ header nav {
     background-position: center center;
     height: 600px;
     width: 400px;
+    border-radius: 25px;
+    
 }
 
 #registro {
@@ -282,8 +292,8 @@ header nav {
     flex-direction: column;
     height: 100vh;
     background-image: linear-gradient(0deg,
-            rgba(0, 0, 51, 0.25),
-            rgba(0, 0, 51, 1)), url("./img/matrixpill.png");
+            rgba(0, 0, 34, 0.25),
+            rgba(0, 0, 34, 1)), url("./img/matrixpill.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -298,5 +308,5 @@ form {
     align-items: left;
     text-align: left;
     font-weight: normal;
-    background-color: rgba(0, 0, 51, 0.8);
+    background-color: rgba(0, 0, 34, 0.7);
 }
