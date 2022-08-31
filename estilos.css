@@ -168,26 +168,26 @@ header a:hover {
 .carta:first-child {
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url("Reseña.png");
+            rgba(0, 0, 0, 0.5)), url("./img/Reseña.png");
 
 }
 
 .carta:nth-child(2) {
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url("posdcast.png");
+            rgba(0, 0, 0, 0.5)), url("./img/posdcast.png");
 }
 
 .carta:nth-child(3) {
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url("buscar.png");
+            rgba(0, 0, 0, 0.5)), url("./img/buscar.png");
 }
 
 .carta:nth-child(4) {
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url("uno.png");
+            rgba(0, 0, 0, 0.5)), url("./img/uno.png");
 
 }
 
@@ -261,7 +261,7 @@ footer .container {
     }
 
     #QuienesSomos .img-container{
-        background-image: url("uno.png");
+        background-image: url("./img/uno.png");
         background-size: cover;
         background-position: center center;
         height: 600px;
