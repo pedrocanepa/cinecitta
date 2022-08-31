@@ -35,6 +35,7 @@ p {
 }
 
 button {
+    font-family: 'Proxima Nova','Source Sans Pro','Roboto', sans-serif;
     font-size: 1.25em;
     font-weight: bold;
     padding: 10px 30px;
@@ -208,16 +209,15 @@ header a:hover {
 }
 
 footer {
+    padding: 1rem 1rem 1rem 1rem;
     background-color: #003;
 }
 
 footer h4 {
-    margin: 0;
-    color: brown;
+    color: #DDD;
 }
 
 footer .container {
-    height: 15px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -268,3 +268,18 @@ footer .container {
         width: 400px; 
     }
 
+    #registro {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #FFF;
+        flex-direction: column;
+        height: 100vh;
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 51, 0.5),
+                rgba(0, 0, 51, 1)), url("./img/matrixpill.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
