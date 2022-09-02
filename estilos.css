@@ -23,15 +23,25 @@ h2 {
 
 h3 {
     font-weight: bold;
-    font-size: 2em;
-}
-
-h3 {
     font-size: 4em;
 }
 
+h4 {
+    font-weight: bold;
+    font-size: 1em;
+}
 p {
     font-size: 1.25em;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #F60;
 }
 
 button {
@@ -47,8 +57,18 @@ button {
 }
 
 button:hover {
-    background-color: #F63;
+    background-color: #F60;
 }
+
+button a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+button a:hover {
+    color: #FFF;
+}
+
 
 .container {
     max-width: 1400px;
@@ -60,7 +80,7 @@ button:hover {
 }
 
 .emphasis {
-    color: #F63;
+    color: #F60;
     font-weight: bold;
 }
 
@@ -119,7 +139,7 @@ header a {
 }
 
 header a:hover {
-    color: #F63;
+    color: #F60;
 }
 
 #film {
@@ -331,4 +351,49 @@ form {
     text-align: left;
     font-weight: normal;
     background-color: rgba(0, 0, 34, 0.7);
+}
+
+#peliculas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFF;
+    flex-direction: column;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 55, 1),
+            rgba(0, 0, 34, 1));
+}
+
+figure {
+    padding-left: 1vmax;
+    padding-right: 1vmax;
+    padding-top: 2vmin;
+    padding-bottom: 2vmin;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 17, 0.7);
+}
+
+figcaption {
+    font-size: 0.75rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#peliculas img {
+    border-radius: 15px;
+}
+
+#peliculas img,figcaption {
+    max-width: 12.5vw;
+}
+
+#peliculas a:hover {
+    font-weight: bold;
 }
