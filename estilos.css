@@ -384,7 +384,7 @@ figure:hover {
 }
 
 figcaption {
-    font-size: 0.75rem;
+    font-size: 1rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -395,7 +395,7 @@ figcaption {
 }
 
 #peliculas img,figcaption {
-    max-width: 12.5vw;
+    max-width: 15vw;
 }
 
 #peliculas a:hover {
