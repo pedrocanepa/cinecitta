@@ -379,6 +379,10 @@ figure {
     background-color: rgba(0, 0, 17, 0.7);
 }
 
+figure:hover {
+    box-shadow: 1vmax 2vmin #F60;
+}
+
 figcaption {
     font-size: 0.75rem;
     white-space: nowrap;
