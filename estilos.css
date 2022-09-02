@@ -52,7 +52,7 @@ button:hover {
 
 .container {
     max-width: 1400px;
-    margin: auto;
+    /* margin: auto; */
 }
 
 .color-acento {
@@ -69,12 +69,34 @@ header {
 }
 
 header .logo {
+    position: relative;
+    max-width: 100%;
+    /* margin: 0; */
+    padding: 0;
+}
+
+header .logo img.logo-hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .2s;
+}
+
+.logo:hover img.logo-hover {
+  opacity: 1;
+}
+
+/* header .logo {
     margin: 0;
-    padding: 25px 30px;
+    /* padding: 25px 30px;
     font-weight: bold;
     color: #FFF;
     font-size: 1.6em;
-}
+} */
 
 header .container {
     display: flex;
@@ -86,11 +108,11 @@ header nav {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-bottom: 25px;
+    /* padding-bottom: 25px; */
 }
 
 header a {
-    padding: 5px 12px;
+    padding: 0 12px;
     text-decoration: none;
     font-weight: bold;
     color: #FFF;
