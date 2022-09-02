@@ -170,14 +170,6 @@ header a:hover {
     z-index: -1;
 }
 
-#hero h1 {
-    color: #FFF;
-}
-
-#uno button {
-    font-size: 1.75em;
-}
-
 #QuienesSomos .container {
     text-align: center;
     padding: 200px 12px;
@@ -360,9 +352,16 @@ form {
     text-align: center;
     color: #FFF;
     flex-direction: column;
+    background-color: rgba(0, 0, 55, 1);
+    background-image: linear-gradient(30deg, rgba(0, 0, 55, 0.5), (0, 0, 17, 0.5));
+/*     
     background-image: linear-gradient(0deg,
             rgba(0, 0, 55, 1),
-            rgba(0, 0, 34, 1));
+            rgba(0, 0, 34, 1)); */
+}
+
+#peliculas .container {
+    padding: 150px 12px;
 }
 
 figure {
