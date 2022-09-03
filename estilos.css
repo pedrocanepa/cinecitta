@@ -30,6 +30,7 @@ h4 {
     font-weight: bold;
     font-size: 1em;
 }
+
 p {
     font-size: 1.25em;
 }
@@ -96,18 +97,18 @@ header .logo {
 }
 
 header .logo img.logo-hover {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  object-fit: contain;
-  opacity: 0;
-  transition: opacity .2s;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity .2s;
 }
 
 .logo:hover img.logo-hover {
-  opacity: 1;
+    opacity: 1;
 }
 
 /* header .logo {
@@ -288,7 +289,7 @@ header nav {
 #QuienesSomos .container {
     display: flex;
     justify-content: space-evenly;
-    padding-top: -100%;
+    padding-top: -50vw;
 }
 
 #QuienesSomos .texto {
@@ -314,7 +315,7 @@ header nav {
     height: 600px;
     width: 400px;
     border-radius: 25px;
-    
+
 }
 
 #registro {
@@ -354,14 +355,14 @@ form {
     flex-direction: column;
     background-color: rgba(0, 0, 55, 1);
     background-image: linear-gradient(30deg, rgba(0, 0, 55, 0.5), (0, 0, 17, 0.5));
-/*     
+    /*     
     background-image: linear-gradient(0deg,
             rgba(0, 0, 55, 1),
             rgba(0, 0, 34, 1)); */
 }
 
 #peliculas .container {
-    padding: 150px 12px;
+    padding: 10vw 5vw;
 }
 
 figure {
@@ -384,16 +385,20 @@ figure:hover {
 
 figcaption {
     font-size: 1rem;
-    white-space: nowrap;
+    /* white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    display: box;
+    line-clamp: 1;
+    box-orient: vertical; */
 }
 
 #peliculas img {
     border-radius: 15px;
 }
 
-#peliculas img,figcaption {
+#peliculas img,
+figcaption {
     max-width: 15vw;
 }
 
