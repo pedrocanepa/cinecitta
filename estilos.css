@@ -10,29 +10,30 @@ html {
 body {
     font-family: 'Proxima Nova', 'Source Sans Pro', 'Roboto', sans-serif;
     margin: 0;
+    background-color: #002;
 }
 
 h1 {
     font-weight: bold;
-    font-size: 3.5em;
+    font-size: 10vmin;
 }
 
 h2 {
-    font-size: 2.7em;
+    font-size: 6vmin;
 }
 
 h3 {
     font-weight: bold;
-    font-size: 4em;
+    font-size: 10vmin;
 }
 
 h4 {
     font-weight: bold;
-    font-size: 1em;
+    font-size: 5vmin;
 }
 
 p {
-    font-size: 1.25em;
+    font-size: 3vmin;
 }
 
 a {
@@ -47,7 +48,7 @@ a:hover {
 
 button {
     font-family: 'Proxima Nova', 'Source Sans Pro', 'Roboto', sans-serif;
-    font-size: 1.25em;
+    font-size: 4vmin;
     font-weight: bold;
     padding: 10px 30px;
     border-radius: 10px;
@@ -84,6 +85,9 @@ button a:hover {
     color: #F60;
     font-weight: bold;
 }
+
+
+/* Header */
 
 header {
     background-color: #002;
@@ -143,6 +147,28 @@ header a:hover {
     color: #F60;
 }
 
+@media (min-width: 720px) {
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+}
+
+header nav {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 2vw;
+}
+
+
+/* Home -> Background Video */
+
 #film {
     display: flex;
     align-items: center;
@@ -171,9 +197,12 @@ header a:hover {
     z-index: -1;
 }
 
+
+/* Home -> Quiénes Somos */
+
 #QuienesSomos .container {
     text-align: center;
-    padding: 200px 12px;
+    padding: 20vmin 2vmin 0vmin;
     color: #FFF;
     background-image: linear-gradient(0deg,
             rgba(0, 0, 34, 1),
@@ -183,6 +212,43 @@ header a:hover {
     background-position: center center;
 }
 
+.quienessomos {
+    font-size: 4vmin;
+}
+
+#QuienesSomos .container {
+    display: flex;
+    justify-content: space-evenly;
+    /* padding-top: -50vw; */
+}
+
+#QuienesSomos .texto {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding: 0 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgba(0, 0, 34, 0.8);
+    border-radius: 25px;
+}
+
+/* #QuienesSomos h2 {
+    /* margin-top: -50%;
+} */
+
+#QuienesSomos .img-container {
+    background-image: url("./img/uno.png");
+    background-size: cover;
+    background-position: center center;
+    height: 600px;
+    width: 400px;
+    border-radius: 25px;
+
+}
+
+/* Home -> Menú de navegación */
 
 #navegar {
     background-color: #002;
@@ -191,7 +257,7 @@ header a:hover {
 }
 
 #navegar .container {
-    padding: 150px 12px;
+    padding: 10vmin 2vmin;
 }
 
 #navegar p {
@@ -201,8 +267,8 @@ header a:hover {
 #navegar .carta {
     background-position: center center;
     background-size: cover;
-    padding: 50px 0px;
-    margin: 30px;
+    padding: 5vmin 0;
+    margin: 7vmin;
     border-radius: 15px;
 }
 
@@ -238,7 +304,7 @@ header a:hover {
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 90vh;
+    height: 50vmin;
     background-image: linear-gradient 0deg,
         #003,
         rgba(20, 15, 15, 0.5)
@@ -248,9 +314,13 @@ header a:hover {
     font-size: 5vw;
 }
 
+
+/* Footer */
+
 footer {
     padding: 1rem 1rem 1rem 1rem;
     background-color: #003;
+    border-radius: 15px;
 }
 
 footer h4 {
@@ -263,60 +333,8 @@ footer .container {
     align-items: flex-end;
 }
 
-@media (min-width: 720px) {
-    header {
-        position: fixed;
-        width: 100%;
-    }
 
-    header .container {
-        flex-direction: row;
-        justify-content: space-between;
-
-    }
-}
-
-header nav {
-    flex-direction: row;
-    padding-bottom: 0;
-    padding-right: 20px;
-}
-
-#hero h1 {
-    font-size: 5em;
-}
-
-#QuienesSomos .container {
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: -50vw;
-}
-
-#QuienesSomos .texto {
-    width: 50%;
-    max-width: 600px;
-    text-align: initial;
-    padding: 2.5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: rgba(0, 0, 34, 0.7);
-    border-radius: 25px;
-}
-
-#QuienesSomos h2 {
-    margin-top: -50%;
-}
-
-#QuienesSomos .img-container {
-    background-image: url("./img/uno.png");
-    background-size: cover;
-    background-position: center center;
-    height: 600px;
-    width: 400px;
-    border-radius: 25px;
-
-}
+/* Registro.html */
 
 #registro {
     display: flex;
@@ -345,6 +363,9 @@ form {
     font-weight: normal;
     background-color: rgba(0, 0, 34, 0.7);
 }
+
+
+/* Reseñas.html */
 
 #peliculas {
     display: flex;
