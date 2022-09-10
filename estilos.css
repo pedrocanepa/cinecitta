@@ -175,6 +175,7 @@ header nav {
     justify-content: center;
     text-align: center;
     color: #FFF;
+    text-shadow: 1px 1px 4px black;
     flex-direction: column;
     height: 100vh;
     background-image: linear-gradient(0deg,
@@ -204,6 +205,7 @@ header nav {
     text-align: center;
     padding: 20vmin 2vmin 0vmin;
     color: #FFF;
+    text-shadow: 1px 1px 4px black;
     background-image: linear-gradient(0deg,
             rgba(0, 0, 34, 1),
             rgba(0, 0, 34, 0.1));
@@ -254,6 +256,7 @@ header nav {
     background-color: #002;
     color: rgb(255, 255, 255);
     text-align: center;
+    text-shadow: 1px 1px 4px black;
 }
 
 #navegar .container {
@@ -303,6 +306,7 @@ header nav {
     align-items: center;
     justify-content: center;
     text-align: center;
+    text-shadow: 1px 1px 4px black;
     flex-direction: column;
     height: 50vmin;
     background-image: linear-gradient 0deg,
@@ -321,6 +325,7 @@ footer {
     padding: 1rem 1rem 1rem 1rem;
     background-color: #003;
     border-radius: 15px;
+    text-shadow: 1px 1px 4px black;
 }
 
 footer h4 {
@@ -342,6 +347,7 @@ footer .container {
     justify-content: center;
     text-align: center;
     color: #FFF;
+    text-shadow: 1px 1px 4px black;
     flex-direction: column;
     height: 100vh;
     background-image: linear-gradient(0deg,
@@ -361,7 +367,7 @@ form {
     align-items: left;
     text-align: left;
     font-weight: normal;
-    background-color: rgba(0, 0, 34, 0.7);
+    background-color: rgba(0, 0, 34, 0.8);
 }
 
 
@@ -380,6 +386,10 @@ form {
     background-image: linear-gradient(0deg,
             rgba(0, 0, 55, 1),
             rgba(0, 0, 34, 1)); */
+}
+
+#peliculas h2 {
+    text-shadow: 1px 1px 4px black;
 }
 
 #peliculas .container {
@@ -403,10 +413,30 @@ figure {
 
 figure:hover {
     box-shadow: 1vmax 2vmin #F60;
+    transform: scale(1.1,1.1);
 }
 
+/* .resena {
+    padding-left: 2vmin;
+    padding-right: 2vmin;
+    padding-top: 2vmin;
+    padding-bottom: 2vmin;
+    margin: 2vmin;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 17, 0.7);
+}
+
+.resena:hover {
+    box-shadow: 1vmax 2vmin #F60;
+} */
+
 figcaption {
-    font-size: 1rem;
+    font-size: medium;
     /* white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -419,9 +449,10 @@ figcaption {
     border-radius: 15px;
 }
 
-#peliculas img,
+#peliculas .poster,
 figcaption {
     max-width: 15vw;
+    min-width: 150px;
 }
 
 #peliculas a:hover {
