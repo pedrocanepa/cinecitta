@@ -168,7 +168,7 @@ header a:active {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
     header nav {
         display: flex;
         flex-direction: column;
@@ -289,6 +289,8 @@ header a:active {
 /* Home -> Quiénes Somos */
 
 #QuienesSomos .container {
+    display: flex;
+    justify-content: space-evenly;
     text-align: center;
     padding: 20vmin 2vmin 0vmin;
     color: #FFF;
@@ -305,15 +307,9 @@ header a:active {
     font-size: 4vmin;
 }
 
-#QuienesSomos .container {
-    display: flex;
-    justify-content: space-evenly;
-    /* padding-top: -50vw; */
-}
-
 #QuienesSomos .texto {
-    width: 50%;
-    max-width: 600px;
+    width: 60%;
+    max-width: 800px;
     text-align: initial;
     padding: 0 2%;
     display: flex;
@@ -331,8 +327,7 @@ header a:active {
     background-image: url("./img/uno.png");
     background-size: cover;
     background-position: center center;
-    height: 600px;
-    width: 400px;
+    width: 30%;
     border-radius: 25px;
 
 }
