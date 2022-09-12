@@ -403,15 +403,9 @@ header a:active {
 
 footer {
     display: flex;
-    margin: 7vmin;
-    padding: 0 2vmin;
+    padding: 8vmin 2vmin 12vmin;
     background-color: #003;
-    border-radius: 15px;
     text-shadow: 1px 1px 4px black;
-}
-
-footer h4 a {
-    color: #F60;
 }
 
 footer .container {
@@ -433,6 +427,10 @@ footer .logocontacto {
     width: 40vmin;
     height: 40vmin;
     border-radius: 15px;
+}
+
+footer h4 a {
+    color: #F60;
 }
 
 .footertext {
