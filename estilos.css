@@ -156,7 +156,7 @@ header a:active {
 }
 
 
-@media only screen and (min-width: 720px) {
+@media only screen and (min-width: 800px) {
     header {
         position: fixed;
         width: 100%;
@@ -402,7 +402,9 @@ header a:active {
 /* Footer */
 
 footer {
-    padding: 0 1vmin;
+    display: flex;
+    margin: 7vmin;
+    padding: 0 2vmin;
     background-color: #003;
     border-radius: 15px;
     text-shadow: 1px 1px 4px black;
@@ -413,6 +415,13 @@ footer h4 a {
 }
 
 footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+footer .logocontacto {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -443,12 +452,54 @@ footer .container {
     font-weight: bold;
 }
 
+footer .mapa {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
 #mapa {
     border-radius: 25px;
     margin-top: 3vmin;
     margin-left: 15vmin;
     height: 40vmin;
+    max-width: 80%;
     background-color: #002;
+}
+
+@media only screen and (max-width: 800px) {
+    footer .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .logocontacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footertext {
+        position: relative;
+        text-align: center;
+    }
+
+    #mapa {
+        display: none;
+    }
 }
 
 /* Registro.html */
