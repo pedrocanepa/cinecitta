@@ -408,7 +408,7 @@ footer {
     text-shadow: 1px 1px 4px black;
 }
 
-footer h4 {
+footer h4 a {
     color: #F60;
 }
 
@@ -429,6 +429,7 @@ footer .container {
 .footertext {
     position: relative;
     text-align: left;
+    overflow-wrap: normal;
 }
 
 .footertext h6 {
@@ -438,8 +439,13 @@ footer .container {
     line-height: 0;
 }
 
+.footertext a {
+    font-weight: bold;
+}
+
 #mapa {
     border-radius: 25px;
+    margin-top: 3vmin;
     margin-left: 15vmin;
     height: 40vmin;
     background-color: #002;
