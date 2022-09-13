@@ -515,10 +515,10 @@ main .resenas01 {
 /* Navigation menu */
 
 .menu01 {
-    background-color: #000044;
+    background-color: #002;
     color: #FFF;
     text-shadow: 1px 1px 4px black;
-    border-right: 2vmin solid #002;
+    /* border-right: 2vmin solid #002; */
 }
 
 .menu01 #menutitle {
@@ -526,13 +526,15 @@ main .resenas01 {
     align-items: center;
     text-align: center;
     background-color: #006;
-    padding: 3vh;
+    margin: 2vmin 2vmin 0;
+    padding: 1vmin;
+    border-radius: 15px;
     /* border-bottom: 2vmin solid #002; */
 }
 
 .sidenav {
     flex-direction: column;
-    justify-content: start;
+    justify-content:flex-start;
     align-items: initial;
     text-align: initial;
     list-style-position: inside;
