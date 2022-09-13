@@ -525,11 +525,19 @@ main .resenas01 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #006;
-    margin: 2vmin 2vmin 0;
-    padding: 1vmin;
-    border-radius: 15px;
+    background-color: #910;
+    margin: 0 2vmin 0;
+    padding: 0.1vmin;
+    border-radius: 25px;
     /* border-bottom: 2vmin solid #002; */
+}
+
+.menu01 #menutitle:hover {
+    background-color: #F60;
+}
+
+a #menutitle:hover {
+    color: #FFF;
 }
 
 .sidenav {
@@ -540,11 +548,14 @@ main .resenas01 {
     list-style-position: inside;
     list-style-type: none;
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding: 5vmin 5vmin;
+    padding: 1vmin 5vmin;
+    background-color: #003;
+    border-radius: 25px;
+    margin: 2vmin 2vmin 0;
   }
 
 .sidenav p {
-    font-size: 3vmin;
+    font-size: 2.5vmin;
     line-height: 100%;
   }
 
