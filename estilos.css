@@ -114,14 +114,6 @@ header .logo img.logo-hover {
     opacity: 1;
 }
 
-/* header .logo {
-    margin: 0;
-    /* padding: 25px 30px;
-    font-weight: bold;
-    color: #FFF;
-    font-size: 1.6em;
-} */
-
 header .container {
     display: flex;
     flex-direction: column;
@@ -136,8 +128,9 @@ header nav {
     display: flex;
     flex-direction: row;
     padding-right: 2vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
     text-align: center;
-    /* padding-bottom: 25px; */
 }
 
 header a {
@@ -158,13 +151,20 @@ header a:active {
 
 @media only screen and (min-width: 800px) {
     header {
-        position: fixed;
+        position: sticky;
+        top: 0;
         width: 100%;
+        z-index: 10;
     }
 
     header .container {
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    header nav {
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }
 
@@ -172,14 +172,16 @@ header a:active {
     header nav {
         display: flex;
         flex-direction: column;
+        height: 100vh;
+        margin-bottom: 4vmin;
         padding: 0;
         font-size: 5vmin;
         text-align: center;
     }
 
     header nav a {
-        padding-top: 2vmin;
-        padding-bottom: 2vmin;
+        padding-top: 4vh;
+        padding-bottom: 4vh;
         padding-left: 10vmin;
         padding-right: 10vmin;
         margin-top: 1vmin;
@@ -198,60 +200,6 @@ header a:active {
     }
     
 }
-
-/* @media only screen and (max-width: 600px) {
-    html.nav-is-open .nav {
-        display: block;
-      }
-
-    header nav {
-        display: none;
-        position: relative;
-        flex-direction: column;
-        padding: 0;
-        font-size: 5vmin;
-        text-align: center;
-    }
-
-    header .container {
-        flex-direction: row;
-        justify-content:space-between;
-    }
-
-    header button {
-        background-color: unset;
-        display: initial;
-        border-radius: 0;
-        border: none;
-        box-shadow:none;
-        padding: 0 5vw;
-    }
-
-    header button:hover {
-        background-color: unset;
-    }
-
-    header nav a {
-        padding-top: 2vmin;
-        padding-bottom: 2vmin;
-        padding-left: 10vmin;
-        padding-right: 10vmin;
-        margin-top: 1vmin;
-        margin-bottom: 1vmin;
-        text-decoration: none;
-        font-weight: bold;
-        color: #FFF;
-        background-color: #003;
-        border-radius: 15px;
-    }
-
-    header nav a:active {
-        background-color: #F60;
-        color: #002;
-        text-decoration: none;
-    }
-    
-} */
 
 
 /* Home -> Background Video */
@@ -534,6 +482,71 @@ form {
 
 /* Reseñas.html */
 
+@media (max-width:600px) {
+    .menu01 {
+        display: none;
+    }
+}
+
+@media (min-width:600px) {
+    .resenas01 {
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu01 {
+        flex-basis: calc(25%);
+        min-width: 200px;
+    }
+    #peliculas {
+        flex-basis: calc(75%);
+    }
+    #peliculas h2 {
+        display: none;
+    }
+}
+
+main .resenas01 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navigation menu */
+
+.menu01 {
+    background-color: #000044;
+    color: #FFF;
+    text-shadow: 1px 1px 4px black;
+    border-right: 2vmin solid #002;
+}
+
+.menu01 #menutitle {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #006;
+    padding: 3vh;
+    /* border-bottom: 2vmin solid #002; */
+}
+
+.sidenav {
+    flex-direction: column;
+    justify-content: start;
+    align-items: initial;
+    text-align: initial;
+    list-style-position: inside;
+    list-style-type: none;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding: 5vmin 5vmin;
+  }
+
+.sidenav p {
+    font-size: 3vmin;
+    line-height: 100%;
+  }
+
+
 #peliculas {
     display: flex;
     align-items: center;
@@ -542,11 +555,6 @@ form {
     color: #FFF;
     flex-direction: column;
     background-color: rgba(0, 0, 55, 1);
-    background-image: linear-gradient(30deg, rgba(0, 0, 55, 0.5), (0, 0, 17, 0.5));
-    /*     
-    background-image: linear-gradient(0deg,
-            rgba(0, 0, 55, 1),
-            rgba(0, 0, 34, 1)); */
 }
 
 #peliculas h2 {
@@ -554,7 +562,7 @@ form {
 }
 
 #peliculas .container {
-    padding: 8vw 1vw;
+    padding: 4vh 0vw;
 }
 
 .resenas {
@@ -577,25 +585,6 @@ form {
     transform: scale(1.1, 1.1);
 }
 
-/* .resena {
-    padding-left: 2vmin;
-    padding-right: 2vmin;
-    padding-top: 2vmin;
-    padding-bottom: 2vmin;
-    margin: 2vmin;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: row;
-    border-radius: 15px;
-    background-color: rgba(0, 0, 17, 0.7);
-}
-
-.resena:hover {
-    box-shadow: 1vmax 2vmin #F60;
-} */
-
 figcaption {
     font-size: medium;
     /* white-space: nowrap;
@@ -612,10 +601,11 @@ figcaption {
 
 #peliculas .poster,
 figcaption {
-    max-width: 15vw;
+    max-width: 12.5vw;
     min-width: 150px;
 }
 
 #peliculas a:hover {
     font-weight: bold;
 }
+
