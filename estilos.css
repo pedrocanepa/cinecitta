@@ -499,25 +499,6 @@ form {
         justify-content: space-between;
     }
     .menu01 {
-        flex-basis: calc(33%);
-        min-width: 200px;
-        padding-bottom: 20vmin;
-    }
-    #peliculas {
-        flex-basis: calc(67%);
-        padding-bottom: 20vmin;
-    }
-    #peliculas h2 {
-        display: none;
-    }
-}
-
-@media (min-width:800px) {
-    .resenas01 {
-        display: flex;
-        justify-content: space-between;
-    }
-    .menu01 {
         flex-basis: calc(30%);
         min-width: 200px;
         padding-bottom: 20vmin;
@@ -531,7 +512,27 @@ form {
     }
 }
 
+@media (min-width:800px) {
+    .resenas01 {
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu01 {
+        flex-basis: calc(25%);
+        min-width: 240px;
+        padding-bottom: 20vmin;
+    }
+    #peliculas {
+        flex-basis: calc(75%);
+        padding-bottom: 20vmin;
+    }
+    #peliculas h2 {
+        display: none;
+    }
+}
+
 #resenasmain {
+    margin-right: 3vmin;
     margin-bottom: 20vmin;
 }
 
@@ -653,3 +654,13 @@ figcaption {
     font-weight: bold;
 }
 
+
+/* Páginas de reseñas */
+
+#peliculas #metropolis {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 34, 0.25),
+            rgba(0, 0, 34, 1)), url("./stills/001metropolis_01.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
