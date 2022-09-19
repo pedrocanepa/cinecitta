@@ -673,11 +673,11 @@ figcaption {
     .menu01 {
         flex-basis: calc(30%);
         min-width: 200px;
-        padding-bottom: 20vmin;
+        padding-bottom: 10vmin;
     }
     .container_pelicula {
         flex-basis: calc(70%);
-        padding-bottom: 20vmin;
+        padding-bottom: 10vmin;
     }
 }
 
@@ -689,11 +689,11 @@ figcaption {
     .menu01 {
         flex-basis: calc(25%);
         min-width: 240px;
-        padding-bottom: 20vmin;
+        padding-bottom: 10vmin;
     }
     .container_pelicula {
         flex-basis: calc(75%);
-        padding-bottom: 20vmin;
+        padding-bottom: 10vmin;
     }
 }
 
@@ -759,17 +759,41 @@ figcaption {
     text-align: initial;
     width: 80vmin;
     min-width: 300px;
-    padding: 0vmin 3vmin 2vmin;
+    /* padding: 0vmin 3vmin 2vmin; */
     margin: 3vmin 3vmin 0 0;
-    background-color: rgba(0, 0, 34, 0.5);
-    border-radius: 15px;
+    /* background-color: rgba(0, 0, 34, 0.5); */
+    /* border-radius: 15px; */
 }
 
+.container_pelicula .titulopelicula {
+    background-color: rgba(0, 0, 34, 1);;
+    border-radius: 15px;
+    padding: 1vmin 3vmin;
+    margin: 0 0 3vmin 0;
+}
+
+.container_pelicula .fichatecnica {
+    background-color: rgba(0, 0, 34, 0.5);
+    border-radius: 15px;
+    padding: 2vmin 3vmin;
+    margin: 0 0 3vmin 0;
+}
+
+.container_pelicula .sinopsis {
+    display:inline-block;
+    background-color: rgba(0, 0, 34, 0.5);
+    border-radius: 15px;
+    padding: 2vmin 3vmin;
+    margin: 0 0 3vmin 0;
+}
+
+
 .container_pelicula h3 {
-    font-size: 7.5vmin;
-    margin: 2vmin 0 4vmin;
+    font-size: 8vmin;
+    margin: 0 0 0 0;
 }
 
 .container_pelicula p {
-    line-height: 100%;
+    line-height: 120%;
+    margin: 1vmin 0;
 }
