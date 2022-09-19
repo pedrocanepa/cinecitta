@@ -646,7 +646,7 @@ figcaption {
 
 #peliculas .poster,
 figcaption {
-    max-width: 12.5vw;
+    width: 12.5vw;
     min-width: 150px;
 }
 
@@ -655,12 +655,95 @@ figcaption {
 }
 
 
-/* Páginas de reseñas */
+/* Páginas individuales de reseñas */
 
-#peliculas #metropolis {
+@media (min-width:640px) {
+    .resenas01 {
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu01 {
+        flex-basis: calc(30%);
+        min-width: 200px;
+        padding-bottom: 20vmin;
+    }
+    .container_resenas {
+        flex-basis: calc(70%);
+        padding-bottom: 20vmin;
+    }
+}
+
+@media (min-width:800px) {
+    .resenas01 {
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu01 {
+        flex-basis: calc(25%);
+        min-width: 240px;
+        padding-bottom: 20vmin;
+    }
+    .container_resenas {
+        flex-basis: calc(75%);
+        padding-bottom: 20vmin;
+    }
+}
+
+.container_resenas {
+    display: inline-flex;
+    align-items:flex-start;
+    justify-content:flex-start;
+    text-align: justify;
+    line-height: 100%;
+    color: #FFF;
+    text-shadow: 1px 1px 4px black;
+    flex-direction: row;
+    max-width: 1400px;
     background-image: linear-gradient(0deg,
-            rgba(0, 0, 34, 0.25),
-            rgba(0, 0, 34, 1)), url("./stills/001metropolis_01.jpg");
+    rgba(17, 17, 55, 1), rgba(17, 17, 55, 0.8),
+    rgba(17, 17, 55, 0.4)), url("./stills/001metropolis_01.jpg");
+    background-color: #113;
     background-repeat: no-repeat;
-    background-size: 100vw;
+    background-size: 100%;
+    background-position: center top;
+    border-radius: 25px;
+}
+
+
+.container_resenas .container {
+    margin: 10vh 0vw;
+    padding: 4vh 0vw;
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: justify;
+}
+
+.container_resenas img {
+    border-radius: 15px;
+}
+
+.container_resenas .poster {
+    width: 15vw;
+    min-width: 150px;
+}
+
+.container_resenas .resenas {
+    padding-left: 2vmin;
+    padding-right: 2vmin;
+    padding-top: 2vmin;
+    padding-bottom: 2vmin;
+    margin: 3vmin 3vmin 3vmin 10vmin;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 17, 0.7);
+}
+
+.container_resenas .resenas:hover {
+    box-shadow: none;
+    transform: none;
 }
