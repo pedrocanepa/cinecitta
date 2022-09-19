@@ -487,27 +487,52 @@ form {
 
 /* Reseñas.html */
 
-@media (max-width:600px) {
+@media (max-width:640px) {
     .menu01 {
         display: none;
     }
 }
 
-@media (min-width:600px) {
+@media (min-width:640px) {
     .resenas01 {
         display: flex;
         justify-content: space-between;
     }
     .menu01 {
-        flex-basis: calc(25%);
+        flex-basis: calc(33%);
         min-width: 200px;
+        padding-bottom: 20vmin;
     }
     #peliculas {
-        flex-basis: calc(75%);
+        flex-basis: calc(67%);
+        padding-bottom: 20vmin;
     }
     #peliculas h2 {
         display: none;
     }
+}
+
+@media (min-width:800px) {
+    .resenas01 {
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu01 {
+        flex-basis: calc(30%);
+        min-width: 200px;
+        padding-bottom: 20vmin;
+    }
+    #peliculas {
+        flex-basis: calc(70%);
+        padding-bottom: 20vmin;
+    }
+    #peliculas h2 {
+        display: none;
+    }
+}
+
+#resenasmain {
+    margin-bottom: 20vmin;
 }
 
 main .resenas01 {
@@ -531,7 +556,7 @@ main .resenas01 {
     align-items: center;
     text-align: center;
     background-color: #910;
-    margin: 0 2vmin 0;
+    margin: 0 3vmin 0;
     padding: 0.1vmin;
     border-radius: 25px;
     /* border-bottom: 2vmin solid #002; */
@@ -554,9 +579,9 @@ a #menutitle:hover {
     list-style-type: none;
     overflow-x: hidden; /* Disable horizontal scroll */
     padding: 1vmin 5vmin;
-    background-color: #003;
+    background-color: #113;
     border-radius: 25px;
-    margin: 2vmin 2vmin 0;
+    margin: 3vmin 3vmin 0;
   }
 
 .sidenav p {
@@ -572,7 +597,8 @@ a #menutitle:hover {
     text-align: center;
     color: #FFF;
     flex-direction: column;
-    background-color: rgba(0, 0, 55, 1);
+    background-color: #113;
+    border-radius: 25px;
 }
 
 #peliculas h2 {
