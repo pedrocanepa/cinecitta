@@ -11,6 +11,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
     <link rel="manifest" href="./favicon/site.webmanifest">
+    <script src="main.js" defer></script>
 </head>
 
 <body>
@@ -20,8 +21,14 @@
                 <img class="logo01" src="./img/LongLogo85px.png" alt="Cinecitta logo" width="100%" height="100%">
                 <img class="logo-hover" src="./img/LongLogo85pxAlt.png" alt="Cinecitta logo" width="100%" height="100%">
             </a>
-            <button class="menu-toggle"><img src="./img/hamburger_blue.png" alt="Show menu"></button>
-            <nav>
+            <!-- <button class="menu-toggle"><img src="./img/hamburger_blue.png" alt="Show menu"></button> -->
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>    
+            
+            <nav class="navbar">
                 <a href="#QuienesSomos">Quiénes somos</a>
                 <a href="#navegar">¿Qué hacer en CINECITTÀ?</a>
                 <a href="registro.html#registro">Registro</a>
@@ -37,7 +44,7 @@
         </video>
         <section id="film">
             <h1>¿No sabés qué ver? <br>¿Aburrido de las mismas películas?</h1>
-            <button>¡Vení a vivir el cine en CINECITTÀ!</button>
+            <a href="index.html#navegar"><button>¡Vení a vivir el cine en CINECITTÀ!</button></a>
         </section>
 
         <section id="QuienesSomos">
@@ -53,22 +60,25 @@
     </main>
 
     <aside id="navegar">
-            <div class="container">
-                <div class="menu">
-                    <h2>¿Qué hacer en CINECITTÀ?</h2>
-                    <div class="opciones">
-                        <div class="carta">
-                            <h3>Reseñas</h3>
-                            <button><a href="resenas.html">¡Lee nuestras reseñas de películas!</a></button>
-                        </div>
+        <div class="container">
+            <div class="menu">
+                <h2>¿Qué hacer en CINECITTÀ?</h2>
+                <div class="opciones">
+                    <div class="carta">
+                        <h3>Reseñas</h3>
+                        <button><a href="resenas.html">¡Lee nuestras reseñas de películas!</a></button>
+                    </div>
 
-                        <div class="carta">
-                            <h3>Buscar</h3>
-                            <button>+ Info</button>
+                    <div class="carta">
+                        <h3>Buscador</h3>
+                        <div class="search-container">
+                        <input size="45" type="text" placeholder="Buscar películas por título, género, director..."
+                            name="buscar"><button>Buscar</button>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </section>
     </aside>
 
