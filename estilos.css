@@ -129,7 +129,7 @@ header nav {
     flex-direction: row;
     padding-right: 2vw;
     margin-top: 2vw;
-    margin-bottom: 2vw;
+    /* margin-bottom: 2vw; */
     text-align: center;
 }
 
@@ -148,6 +148,27 @@ header a:active {
     text-decoration: underline;
 }
 
+/*Hamburguer Menu*/
+.nav{
+    display: flex;
+}
+.toggle-button{
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 30px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
 
 @media only screen and (min-width: 800px) {
     header {
@@ -166,16 +187,18 @@ header a:active {
         margin-top: 0;
         margin-bottom: 0;
     }
+
+
 }
 
 @media only screen and (max-width: 640px) {
     header nav {
         display: flex;
         flex-direction: column;
-        height: 100vh;
-        margin-bottom: 4vmin;
+        /* height: 100vh; */
+        /* margin-bottom: 4vmin; */
         padding: 0;
-        font-size: 5vmin;
+        /* font-size: 5vmin; */
         text-align: center;
     }
 
@@ -293,6 +316,7 @@ header a:active {
         width: 100%;
         text-align: center;
     }
+
 }
 
 /* Home -> Menú de navegación */
@@ -420,6 +444,18 @@ footer #mapa {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .toggle-button{
+        display: flex;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .navbar.active{
+        display: flex;
     }
 }
 
