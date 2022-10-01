@@ -73,10 +73,10 @@ button a:hover {
 }
 
 
-.container {
-    /* max-width: 1400px; */
-    /* margin: auto; */
-}
+/* .container {
+    max-width: 1400px;
+    margin: auto;
+} */
 
 .color-acento {
     color: #FFF;
@@ -157,6 +157,7 @@ header a:active {
     text-decoration: underline;
 }
 
+<<<<<<< HEAD
 /*Hamburguer Menu*/
 .nav{
     display: flex;
@@ -178,6 +179,20 @@ header a:active {
     background-color: white;
     border-radius: 10px;
 }
+=======
+footer  /* nuevo  */ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #022144;
+    color: #ffffff;
+    margin: -0.1rem 0;
+    padding: 2rem 0;
+    text-align: center; }
+
+
+
+>>>>>>> branch_andrea
 
 @media only screen and (min-width: 800px) {
     
@@ -389,7 +404,7 @@ header a:active {
 
 footer {
     display: flex;
-    padding: 12vmin 2vmin 14vmin;
+    padding: 10vmin 2vmin 14vmin;
     background-color: #003;
     text-shadow: 1px 1px 4px black;
 }
@@ -408,16 +423,7 @@ footer .logocontacto {
     align-items: flex-start;
 }
 
-.logofooter img {
-    position: relative;
-    width: 40vmin;
-    height: 40vmin;
-    border-radius: 15px;
-}
 
-footer h4 a {
-    color: #F60;
-}
 
 .footertext {
     position: relative;
