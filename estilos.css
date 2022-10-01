@@ -157,8 +157,7 @@ header a:active {
     text-decoration: underline;
 }
 
-<<<<<<< HEAD
-/*Hamburguer Menu*/
+/*Hamburger Menu*/
 .nav{
     display: flex;
 }
@@ -179,7 +178,6 @@ header a:active {
     background-color: white;
     border-radius: 10px;
 }
-=======
 footer  /* nuevo  */ {
     display: flex;
     flex-direction: column;
@@ -192,7 +190,6 @@ footer  /* nuevo  */ {
 
 
 
->>>>>>> branch_andrea
 
 @media only screen and (min-width: 800px) {
     
