@@ -180,6 +180,7 @@ header a:active {
 }
 
 @media only screen and (min-width: 800px) {
+    
     header {
         position: sticky;
         top: 0;
@@ -466,13 +467,59 @@ footer #mapa {
     .navbar{
         display: none;
     }
+        
+}
 
+@media (min-width: 640px) and (max-width: 800px) {
     .navbar.active{
         display: flex;
     }
+
+    header nav {
+        flex-direction: row;
+        
+        flex-wrap: wrap;
+        gap: 2%;
+        /* width: 5rem; */
+        /* height: 100vh; */
+        /* margin-bottom: 4vmin; */
+        padding: 0;
+        /* font-size: 5vmin; */
+        text-align: center;
+        
+    }
+
+    header nav >*{
+        flex: 1 1 40%;
+    }
+
+    header nav a {
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+        padding-left: 10vmin;
+        padding-right: 10vmin;
+        margin-top: 1vmin;
+        margin-bottom: 1vmin;
+        text-decoration: none;
+        font-weight: bold;
+        color: #FFF;
+        background-color: #003;
+        border-radius: 15px;
+    }
+
+    header nav a:active {
+        background-color: #F60;
+        color: #002;
+        text-decoration: none;
+    }
+
 }
 
 @media only screen and (max-width: 640px) {
+    .navbar.active{
+        display: flex;
+    }
+
     footer {
         display: flex;
         flex-direction: column;
