@@ -359,6 +359,9 @@ footer
 /* Home -> Menú de navegación */
 
 #navegar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #002;
     color: rgb(255, 255, 255);
     text-align: center;
@@ -367,7 +370,7 @@ footer
 
 #navegar .container {
     padding: 10vmin 2vmin;
-    margin: 0 4vmin;
+    margin: 0 2vmin;
 }
 
 #navegar p {
@@ -408,11 +411,12 @@ footer
     }
 
     .carta:first-child {
-        width: 100%;
+        width: 90vw;
     }
     
     .carta:nth-child(2) {
-        width: 100%;
+        width: 90vw;
+
     }
 }
 
@@ -441,45 +445,47 @@ footer
 }
 
 
-/* Footer */
+/* Contacto.html */
 
-footer {
+#contacto {
     display: flex;
-    padding: 10vmin 2vmin 14vmin;
+    justify-content: center;
+    padding: 12vmin 0vmin 14vmin;
     background-color: #003;
     text-shadow: 1px 1px 4px black;
+    align-items: center;
 }
 
-footer .container {
+#contacto .container {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
 }
 
-footer .logocontacto {
+.logocontacto {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
 }
 
 
-
-.footertext {
+.contactotexto {
     position: relative;
-    text-align: left;
+    text-align: center;
     overflow-wrap: normal;
 }
 
-.footertext h6 {
+.contactotexto h6 {
     color: #FFF;
     font-size: 3vmin;
     font-weight: normal;
     line-height: 0;
 }
 
-.footertext a {
+.contactotexto a {
     font-weight: bold;
 }
 
@@ -490,12 +496,11 @@ footer .logocontacto {
     align-items: flex-start;
 } */
 
-footer #mapa {
+#mapa {
     border-radius: 25px;
-    margin-top: 3vmin;
-    margin-left: 15vmin;
-    height: 40vmin;
-    max-width: 70%;
+    margin-top: 0vmin;
+    margin-left: 5vmin;
+    width: 40vw;
     background-color: #002;
 }
 
@@ -567,14 +572,15 @@ footer #mapa {
         display: flex;
     }
 
-    footer {
+
+    #contacto .container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    footer .logocontacto {
+    #contacto .logocontacto {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -584,10 +590,6 @@ footer #mapa {
     .footertext {
         position: relative;
         text-align: center;
-    }
-
-    #mapa {
-        display: none;
     }
 }
 
