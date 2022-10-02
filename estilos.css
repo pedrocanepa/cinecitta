@@ -60,7 +60,7 @@ button {
 
 button:hover {
     background-color: #F60;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 button a {
@@ -129,9 +129,9 @@ header .container {
     align-items: center;
 }
 
-header button {
+/* header button {
     display: none;
-}
+} */
 
 header nav {
     display: flex;
@@ -143,7 +143,7 @@ header nav {
 }
 
 header a {
-    padding: 0 1vw;
+    padding: 0vw 1vw;
     text-decoration: none;
     font-weight: bold;
     color: #FFF;
@@ -157,11 +157,17 @@ header a:active {
     text-decoration: underline;
 }
 
+header button {
+    display: none;
+}
+
+
 /*Hamburger Menu*/
-.nav{
+.nav {
     display: flex;
 }
-.toggle-button{
+
+.toggle-button {
     position: absolute;
     top: 1.7rem;
     right: 1rem;
@@ -172,13 +178,17 @@ header a:active {
     height: 30px;
 }
 
-.toggle-button .bar{
+.toggle-button .bar {
     height: 3px;
     width: 100%;
     background-color: white;
     border-radius: 10px;
 }
-footer  /* nuevo  */ {
+
+footer
+
+/* nuevo  */
+    {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -186,13 +196,14 @@ footer  /* nuevo  */ {
     color: #ffffff;
     margin: -0.1rem 0;
     padding: 2rem 0;
-    text-align: center; }
+    text-align: center;
+}
 
 
 
 
 @media only screen and (min-width: 800px) {
-    
+
     header {
         position: sticky;
         top: 0;
@@ -209,6 +220,8 @@ footer  /* nuevo  */ {
         margin-top: 0;
         margin-bottom: 0;
     }
+
+    
 
 
 }
@@ -243,7 +256,8 @@ footer  /* nuevo  */ {
         color: #002;
         text-decoration: none;
     }
-    
+
+
 }
 
 
@@ -353,21 +367,27 @@ footer  /* nuevo  */ {
 
 #navegar .container {
     padding: 10vmin 2vmin;
+    margin: 0 4vmin;
 }
 
 #navegar p {
     display: none;
 }
 
+#navegar .opciones {
+    display: inline-flex;
+}
+
 #navegar .carta {
     background-position: center center;
     background-size: cover;
-    padding: 5vmin 0;
-    margin: 7vmin;
+    padding: 5vmin 15vmin;
+    margin: 4vmin;
     border-radius: 15px;
 }
 
 .carta:first-child {
+    width: 50%;
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)), url("./img/Reseña.png");
@@ -375,13 +395,34 @@ footer  /* nuevo  */ {
 }
 
 .carta:nth-child(2) {
+    width: 50%;
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url("./img/buscar.png");
+            rgba(0, 0, 0, 0.5)), url("./img/buscar.jpg");
+}
+
+@media only screen and (max-width: 1000px) {
+    #navegar .opciones {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .carta:first-child {
+        width: 100%;
+    }
+    
+    .carta:nth-child(2) {
+        width: 100%;
+    }
 }
 
 
 /* Buscar */
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+}
 
 .search-container input[type=text] {
     font-family: 'Proxima Nova', 'Source Sans Pro', 'Roboto', sans-serif;
@@ -390,11 +431,14 @@ footer  /* nuevo  */ {
     border: none;
     border-radius: 15px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 10);
-  }
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 .search-container button {
     margin: 2vmin;
-  }
+}
 
 
 /* Footer */
@@ -463,24 +507,24 @@ footer #mapa {
         align-items: center;
     }
 
-    .toggle-button{
+    .toggle-button {
         display: flex;
     }
 
-    .navbar{
+    .navbar {
         display: none;
     }
-        
+
 }
 
 @media (min-width: 640px) and (max-width: 800px) {
-    .navbar.active{
+    .navbar.active {
         display: flex;
     }
 
     header nav {
         flex-direction: row;
-        
+
         flex-wrap: wrap;
         gap: 2%;
         /* width: 5rem; */
@@ -489,10 +533,10 @@ footer #mapa {
         padding: 0;
         /* font-size: 5vmin; */
         text-align: center;
-        
+
     }
 
-    header nav >*{
+    header nav>* {
         flex: 1 1 40%;
     }
 
@@ -519,7 +563,7 @@ footer #mapa {
 }
 
 @media only screen and (max-width: 640px) {
-    .navbar.active{
+    .navbar.active {
         display: flex;
     }
 
@@ -596,7 +640,7 @@ form input {
 #iniciarsesion {
     display: flex;
     align-items: center;
-    justify-content:flex-start;
+    justify-content: flex-start;
     text-align: center;
     color: #FFF;
     text-shadow: 1px 1px 4px black;
@@ -625,15 +669,18 @@ form input {
         display: flex;
         justify-content: space-between;
     }
+
     .menu01 {
         flex-basis: calc(30%);
         min-width: 200px;
         padding-bottom: 20vmin;
     }
+
     #peliculas {
         flex-basis: calc(70%);
         padding-bottom: 20vmin;
     }
+
     #peliculas h2 {
         display: none;
     }
@@ -644,15 +691,18 @@ form input {
         display: flex;
         justify-content: space-between;
     }
+
     .menu01 {
         flex-basis: calc(25%);
         min-width: 240px;
         padding-bottom: 20vmin;
     }
+
     #peliculas {
         flex-basis: calc(75%);
         padding-bottom: 20vmin;
     }
+
     #peliculas h2 {
         display: none;
     }
@@ -700,22 +750,23 @@ a #menutitle:hover {
 
 .sidenav {
     flex-direction: column;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items: initial;
     text-align: initial;
     list-style-position: inside;
     list-style-type: none;
-    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
     padding: 1vmin 5vmin;
     background-color: #113;
     border-radius: 25px;
     margin: 3vmin 3vmin 0;
-  }
+}
 
 .sidenav p {
     font-size: 2.5vmin;
     line-height: 100%;
-  }
+}
 
 
 #peliculas {
@@ -789,11 +840,13 @@ figcaption {
         display: flex;
         justify-content: space-between;
     }
+
     .menu01 {
         flex-basis: calc(30%);
         min-width: 200px;
         padding-bottom: 10vmin;
     }
+
     .container_pelicula {
         flex-basis: calc(70%);
         padding-bottom: 10vmin;
@@ -805,11 +858,13 @@ figcaption {
         display: flex;
         justify-content: space-between;
     }
+
     .menu01 {
         flex-basis: calc(25%);
         min-width: 240px;
         padding-bottom: 10vmin;
     }
+
     .container_pelicula {
         flex-basis: calc(75%);
         padding-bottom: 10vmin;
@@ -818,16 +873,16 @@ figcaption {
 
 .container_pelicula {
     display: inline-flex;
-    align-items:flex-start;
-    justify-content:flex-start;
+    align-items: flex-start;
+    justify-content: flex-start;
     text-align: initial;
     color: #FFF;
     text-shadow: 1px 1px 4px black;
     flex-direction: row;
     max-width: 1400px;
     background-image: linear-gradient(0deg,
-    rgba(17, 17, 55, 1), rgba(17, 17, 55, 1), rgba(17, 17, 55, 0.8), rgba(17, 17, 55, 0.6),
-    rgba(17, 17, 55, 0.4)), url("./stills/001metropolis_01.jpg");
+            rgba(17, 17, 55, 1), rgba(17, 17, 55, 1), rgba(17, 17, 55, 0.8), rgba(17, 17, 55, 0.6),
+            rgba(17, 17, 55, 0.4)), url("./stills/001metropolis_01.jpg");
     background-color: #113;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -885,7 +940,8 @@ figcaption {
 }
 
 .container_pelicula .titulopelicula {
-    background-color: rgba(0, 0, 34, 1);;
+    background-color: rgba(0, 0, 34, 1);
+    ;
     border-radius: 15px;
     padding: 1vmin 3vmin;
     margin: 0 0 3vmin 0;
@@ -899,7 +955,7 @@ figcaption {
 }
 
 .container_pelicula .sinopsis {
-    display:inline-block;
+    display: inline-block;
     background-color: rgba(0, 0, 34, 0.5);
     border-radius: 15px;
     padding: 2vmin 3vmin;
