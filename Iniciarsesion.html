@@ -11,38 +11,26 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
     <link rel="manifest" href="./favicon/site.webmanifest">
+    <script src="./js/main.js" defer></script>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <a class="logo" href="index.html">
-                <img class="logo01" src="./img/LongLogo85px.png" alt="Cinecitta logo" width="100%" height="100%">
-                <img class="logo-hover" src="./img/LongLogo85pxAlt.png" alt="Cinecitta logo" width="100%" height="100%">
-            </a>
-            <nav>
-                <a href="#QuienesSomos">Quiénes somos</a>
-                <a href="#navegar">¿Qué hacer en CINECITTÀ?</a>
-                <a href="registro.html#registro">Registro</a>
-                <a href="Iniciarsesion.html">Iniciar sesión</a>
-                <a href="Contacto.html">Contacto</a>
-            </nav>
-        </div>
+    <header id="idheader">
     </header>
 
     <main>
-        <section id="registro">
+        <section id="iniciarsesion">
             <h2>¡Ingresá tus datos!</h2>
             <form action="">
-                <div>
+                <div class="formfields">
                     <label for="email">Email:</label>
                     <input size="35" type="email" name="email" id="email" placeholder="Ingrese su dirección de email">
                 </div>
 
-                <div>
-                    <h5>password</h5>
-                    <input type="password" name="clave" size="25">
+                <div class="formfields">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" name="clave" size="30" placeholder="Ingrese su contraseña">
                 </div>
                  <input type="submit" value="Enviar" />
                 <input type="submit" value="Borrar Formulario">
@@ -51,26 +39,9 @@
         </section>
     </main>
 
-    <footer id="contacto">
-        <footer id="pie">
-            <div>
-                <p> Trabajo práctico Codo a Codo 2023</p>
-            </div>
-            <div>
-                <a href="https://twitter.com/" target="_blank">
-                    <i class="fab fa-twitter" aria-hidden="true"></i>
-                </a>
-                <a href="https://www.facebook.com" target="_blank">
-                        <i class="fab fa-facebook" aria-hidden="true"></i>
-                </a>
-                <a href="https://www.instagram.com/explore/tags/cinecitta target="_blank">
-                    <i class="fab fa-instagram" aria-hidden="true"></i>
-                </a>
-            </div>
+    <footer id="idfooter"> </footer>
 
-            
-        
-    </footer>
+    <script src="./js/headerfooter.js"></script>
 </body>
 
 </html>
