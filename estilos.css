@@ -1013,12 +1013,22 @@ figcaption {
     }
 
     .container_pelicula .container {
+        margin: 5vh 0vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
 
+    }
+
+    .container_pelicula .poster {
+        width: 25vw;
+        min-width: 150px;
+    }
+
+    .container_pelicula .resenas {
+        margin: 2vmin 0 1vmin 0;
     }
 
     .infopelicula {
@@ -1060,12 +1070,22 @@ figcaption {
     }
 
     .container_pelicula .container {
+        margin: 5vh 0vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
 
+    }
+
+    .container_pelicula .poster {
+        width: 25vw;
+        min-width: none;
+    }
+
+    .container_pelicula .resenas {
+        margin: 1vmin 0 1vmin 0;
     }
 
     .infopelicula {
