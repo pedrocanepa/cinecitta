@@ -46,7 +46,7 @@ a:hover {
     color: #F60;
 }
 
-button {
+.basicbtn {
     font-family: 'Proxima Nova', 'Source Sans Pro', 'Roboto', sans-serif;
     font-size: 4vmin;
     font-weight: bold;
@@ -58,17 +58,17 @@ button {
     background-color: #910;
 }
 
-button:hover {
+.basicbtn:hover {
     background-color: #F60;
     cursor: pointer;
 }
 
-button a {
+.basicbtn a {
     text-decoration: none;
     color: #FFF;
 }
 
-button a:hover {
+.basicbtn a:hover {
     color: #FFF;
 }
 
@@ -747,9 +747,10 @@ main .resenas01 {
     background-color: #F60;
 }
 
-a #menutitle:hover {
+#menutitle a:hover {
     color: #FFF;
 }
+
 
 .sidenav {
     flex-direction: column;
@@ -944,24 +945,8 @@ figcaption {
 
 .container_pelicula .titulopelicula {
     background-color: rgba(0, 0, 34, 1);
-    ;
     border-radius: 15px;
     padding: 1vmin 3vmin;
-    margin: 0 0 3vmin 0;
-}
-
-.container_pelicula .fichatecnica {
-    background-color: rgba(0, 0, 34, 0.5);
-    border-radius: 15px;
-    padding: 2vmin 3vmin;
-    margin: 0 0 3vmin 0;
-}
-
-.container_pelicula .sinopsis {
-    display: inline-block;
-    background-color: rgba(0, 0, 34, 0.5);
-    border-radius: 15px;
-    padding: 2vmin 3vmin;
     margin: 0 0 3vmin 0;
 }
 
@@ -974,4 +959,139 @@ figcaption {
 .container_pelicula p {
     line-height: 120%;
     margin: 1vmin 0;
+}
+
+.container_pelicula .panel {
+    background-color: rgba(0, 0, 34, 0.5);
+    border-radius: 15px;
+    padding: 2vmin 3vmin;
+    margin: 0 0 0 0;
+    display: none;
+    overflow: hidden;
+    margin: 0 0 2vmin 0;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    font-family: 'Proxima Nova', 'Source Sans Pro', 'Roboto', sans-serif;
+    background-color: #002;
+    color: #fff;
+    font-size: 3vmin;
+    cursor: pointer;
+    padding: 2vmin;
+    width: 100%;
+    text-align: left;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: 0 0 1vmin 0;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.accordionactive, .accordion:hover {
+    background-color: #f60;
+    font-weight: bold;
+  }
+
+.accordionactive {
+    margin: 0 0 0 0;
+}
+
+/* Ajustes por tamaño de pantalla en reseñas individuales */
+
+@media (max-width:1000px) {
+
+    .container_pelicula {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .container_pelicula .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .infopelicula {
+        width: 100%;
+        text-align: center;
+        min-width: none;
+    }
+
+    .infopelicula .titulopelicula {
+        text-align: center;
+        padding: 1vmin 0;
+        width: 100%;
+        min-width: none;
+        margin: 0 3vmin 1vmin;
+    }
+
+    .infopelicula .accordion {
+        text-align: center;
+        width: 100%;
+        min-width: none;
+        margin: 0 3vmin 1vmin;
+    }
+
+    .infopelicula .panel {
+        width: 100%;
+        min-width: none;
+        margin: 0 3vmin 1vmin;
+    }
+}
+
+@media (max-width:800px) {
+
+    .container_pelicula {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .container_pelicula .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .infopelicula {
+        width: 100%;
+        text-align: center;
+        min-width: none;
+    }
+
+    .infopelicula .titulopelicula {
+        text-align: center;
+        padding: 1vmin 0;
+        width: 100%;
+        min-width: none;
+        margin: 0 1vmin 1vmin;
+    }
+
+    .infopelicula .accordion {
+        text-align: center;
+        width: 100%;
+        min-width: none;
+        margin: 0 1vmin 1vmin;
+    }
+
+    .infopelicula .panel {
+        width: 100%;
+        min-width: none;
+        margin: 0 1vmin 1vmin;
+    }
 }
