@@ -8,7 +8,6 @@
     if (formregistro.apellido.value == 0) {
       alert("Completa el campo Apellido");
       e.preventDefault();
-      return 0;
       //https://www.w3schools.com/jsref/event_preventdefault.asp
       //Evita que un enlace abra la URL
     }
@@ -18,7 +17,6 @@
     if (formregistro.nombre.value == 0) {
       alert("Completa el campo nombre");
       e.preventDefault();
-      return 0;
     }
   };
 
@@ -26,7 +24,6 @@
     if (formregistro.email.value == 0) {
       alert("Completa el campo Email");
       e.preventDefault();
-      return 0;
     }
   };
 
@@ -34,7 +31,6 @@
     if (formregistro.genero.value == 0) {
       alert("Completa el campo Género");
       e.preventDefault();
-      return 0;
     }
   };
 
@@ -42,7 +38,6 @@
     if (formregistro.idioma.selectedIndex == 0) {
       alert("Completa el campo Idioma");
       e.preventDefault();
-      return 0;
     }
   };
 
@@ -50,7 +45,6 @@
     if (formregistro.cumpleanos.value == 0) {
       alert("Completa el campo Cumpleaños");
       e.preventDefault();
-      return 0;
     }
   };
 
@@ -64,7 +58,6 @@
     } else {
       alert("Completa el campo Redes");
       e.preventDefault();
-      return 0;
     }
   };
 
