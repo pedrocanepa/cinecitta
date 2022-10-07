@@ -32,6 +32,12 @@ h4 {
     font-size: 5vmin;
 }
 
+h5 {
+    font-weight: bold;
+    font-size: 3vmin;
+    margin: 2vmin 0 1vmin;
+}
+
 p {
     font-size: 3vmin;
 }
@@ -627,7 +633,7 @@ form {
 
 form input {
     font-family: 'Proxima Nova', 'Source Sans Pro', 'Roboto', sans-serif;
-    margin: 0.5vmin 0;
+    margin: 0.5vmin 0.5vmin 1vmin;
 }
 
 .formfields input {

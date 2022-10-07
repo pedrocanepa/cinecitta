@@ -12,6 +12,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
     <link rel="manifest" href="./favicon/site.webmanifest">
     <script src="./js/main.js" defer></script>
+    <script src="./js/registro.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </head>
 
@@ -23,7 +25,7 @@
         <section id="registro">
             <h2>¡Ingresá tus datos para crear tu perfil personalizado!</h2>
 
-            <form action="">
+            <form name="formregistro" id="formregistro" method="post">
                 <div class="formfields">
                     <label id="apellido" for="apellido">Apellido:</label>
                     <input size="35" type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido">
@@ -38,6 +40,7 @@
                     <label for="email">Email:</label>
                     <input size="35" type="email" name="email" id="email" placeholder="Ingrese su dirección de email">
                 </div>
+
                 <div class="formfields">
                     <label for="Cual genero prefieres"> ¿Cuál género prefieres?</label>
                     <input type="text" name="genero" list="genero">
@@ -53,40 +56,51 @@
                     </datalist>
 
                 </div>
-                <div class="formfields">
 
-                    <label for="lenguajes">¿En qué idioma prefieres ver las películas?:</label>
-                    <select name="lenguajes" id="lenguajes">
-                        <option value="Español"> Español</option>
-                        <option value="Ingles"> Inglés</option>
-                        <option value="Frances"> Francés</option>
-                        <option value="Portugues"> Portugues</option>
-                        <option value="Italiano"> Italiano</option>
+                <div class="formfields">
+                    <label for="idioma">¿En qué idioma prefieres ver las películas?:</label>
+                    <select name="idioma" id="idioma">
+                        <option value="blank"> Elija un idioma</option>
+                        <option value="espanol"> Español</option>
+                        <option value="ingles"> Inglés</option>
+                        <option value="frances"> Francés</option>
+                        <option value="portugues"> Portugués</option>
+                        <option value="italiano"> Italiano</option>
+                        <option value="aleman"> Alemán</option>
+                        <option value="japones"> Japonés</option>
+                        <option value="chino"> Chino</option>
                     </select>
                 </div>
 
                 <div class="formfields">
-                    <label for="Cumpleaños"> Fecha de nacimiento </label>
-                    <input type="date" id="birthday" name="Cumpleaños">
+                    <label for="cumpleanos"> Fecha de nacimiento </label>
+                    <input type="date" id="birthday" name="cumpleanos">
                 </div>
+
                 <div class="formfields">
                     <h5>¿Cómo nos conociste?</h5>
-                    <input type="radio" name="redes" id="Twiter" value="Twiter">
-                    <label for="Twiter"> Twitter </label>
+                    <input type="radio" name="redes" id="twitter" value="twitter">
+                    <label for="twitter"> Twitter </label>
 
-                    <input type="radio" name="redes" id="Prensa" value="Prensa">
-                    <label for="Prensa"> Prensa </label>
+                    <input type="radio" name="redes" id="facebook" value="facebook">
+                    <label for="facebook"> Facebook </label>
 
                     <input type="radio" name="redes" id="Tiktok" value="Tiktok">
-                    <label for="Tiktok"> Tiktok </label>
+                    <label for="tiktok"> Tiktok </label>
 
                     <input type="radio" name="redes" id="instagram" value="instagram">
                     <label for="instagram"> Instagram </label>
+
+                    <input type="radio" name="redes" id="prensa" value="prensa">
+                    <label for="prensa"> Prensa </label>
+
+                    <input type="radio" name="redes" id="otros" value="otros">
+                    <label for="otros"> Otros </label>
                 </div>
 
                 <div class="formfields">
                     <input type="checkbox" name="noticias" id="noticias" value="noticias">
-                    <label for="noticias"> Quiero recibir noticias </label>
+                    <label for="noticias"> Quiero recibir noticias de Cinecittà por email </label>
                 </div>
 
                 <div class="formfields">
@@ -94,16 +108,8 @@
                     <input type="password" name="clave" size="25">
                 </div>
 
-
-
-
-
-
-
-
-
                 <input type="submit" value="Enviar" />
-                <input type="submit" value="Borrar Formulario">
+                <input type="submit" value="Borrar formulario">
             </form>
         </section>
     </main>
