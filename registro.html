@@ -26,76 +26,84 @@
             <h2>¡Ingresá tus datos para crear tu perfil personalizado!</h2>
 
             <form name="formregistro" id="formregistro" method="post">
-                <div class="formfields">
-                    <label id="apellido" for="apellido">Apellido:</label>
-                    <input size="35" type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido">
+                <div class="user-details">
+                    <div class="formfields">
+                        <label id="apellido" for="apellido">Apellido:</label>
+                        <input size="35" type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido">
+                    </div>
+    
+                    <div class="formfields">
+                        <label for="nombre">Nombre:</label>
+                        <input size="35" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+                    </div>
+    
+                    <div class="formfields">
+                        <label for="email">Email:</label>
+                        <input size="35" type="email" name="email" id="email" placeholder="Ingrese su dirección de email">
+                    </div>
+    
+                    <div class="formfields">
+                        <label for="cumpleanos">Fecha de nacimiento:</label>
+                        <input type="date" id="birthday" name="cumpleanos">
+                    </div>
                 </div>
 
-                <div class="formfields">
-                    <label for="nombre">Nombre:</label>
-                    <input size="35" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+                <div class="preferencias">
+                    <div class="formfields">
+                        <label for="Cual genero prefieres"> ¿Cuál género prefieres?</label>
+                        <input type="text" name="genero" list="genero">
+                        <datalist id="genero">
+                            <option>Acción</option>
+                            <option>Ciencia Ficción</option>
+                            <option>Comedia</option>
+                            <option>Drama</option>
+                            <option>Musical</option>
+                            <option>Romántica</option>
+                            <option>Terror</option>
+                        </datalist>
+    
+                    </div>
+    
+                    <div class="formfields">
+                        <label for="idioma">¿En qué idioma prefieres ver las películas?</label>
+                        <input type="text" name="idioma" list="idioma">
+                        <datalist id="idioma">
+                            <option > Español</option>
+                            <option > Inglés</option>
+                            <option > Francés</option>
+                            <option > Portugués</option>
+                            <option > Italiano</option>
+                            <option > Alemán</option>
+                            <option > Japonés</option>
+                            <option > Chino</option>
+                        </select>
+                    </div>
                 </div>
-
-                <div class="formfields">
-                    <label for="email">Email:</label>
-                    <input size="35" type="email" name="email" id="email" placeholder="Ingrese su dirección de email">
-                </div>
-
-                <div class="formfields">
-                    <label for="Cual genero prefieres"> ¿Cuál género prefieres?</label>
-                    <input type="text" name="genero" list="genero">
-
-                    <datalist id="genero">
-                        <option>Acción</option>
-                        <option>Ciencia Ficción</option>
-                        <option>Comedia</option>
-                        <option>Drama</option>
-                        <option>Musical</option>
-                        <option>Romántica</option>
-                        <option>Terror</option>
-                    </datalist>
-
-                </div>
-
-                <div class="formfields">
-                    <label for="idioma">¿En qué idioma prefieres ver las películas?:</label>
-                    <select name="idioma" id="idioma">
-                        <option value="blank"> Elija un idioma</option>
-                        <option value="espanol"> Español</option>
-                        <option value="ingles"> Inglés</option>
-                        <option value="frances"> Francés</option>
-                        <option value="portugues"> Portugués</option>
-                        <option value="italiano"> Italiano</option>
-                        <option value="aleman"> Alemán</option>
-                        <option value="japones"> Japonés</option>
-                        <option value="chino"> Chino</option>
-                    </select>
-                </div>
-
-                <div class="formfields">
-                    <label for="cumpleanos"> Fecha de nacimiento </label>
-                    <input type="date" id="birthday" name="cumpleanos">
-                </div>
+                
 
                 <div class="formfields">
                     <h5>¿Cómo nos conociste?</h5>
-                    <input type="radio" name="redes" id="twitter" value="twitter">
-                    <label for="twitter"> Twitter </label>
+                    <div class="source">
+                        
+                        <input type="radio" name="redes" id="twitter" value="twitter">
+                        <label for="twitter"> Twitter </label>
 
-                    <input type="radio" name="redes" id="facebook" value="facebook">
-                    <label for="facebook"> Facebook </label>
+                        <input type="radio" name="redes" id="facebook" value="facebook">
+                        <label for="facebook"> Facebook </label>
 
-                    <input type="radio" name="redes" id="Tiktok" value="Tiktok">
-                    <label for="tiktok"> Tiktok </label>
+                        <input type="radio" name="redes" id="Tiktok" value="Tiktok">
+                        <label for="tiktok"> Tiktok </label>
 
-                    <input type="radio" name="redes" id="instagram" value="instagram">
-                    <label for="instagram"> Instagram </label>
+                        <input type="radio" name="redes" id="instagram" value="instagram">
+                        <label for="instagram"> Instagram </label>
 
-                    <input type="radio" name="redes" id="prensa" value="prensa">
-                    <label for="prensa"> Prensa </label>
+                        <input type="radio" name="redes" id="prensa" value="prensa">
+                        <label for="prensa"> Prensa </label>
 
-                    <input type="radio" name="redes" id="otros" value="otros">
-                    <label for="otros"> Otros </label>
+                        <input type="radio" name="redes" id="otros" value="otros">
+                        <label for="otros"> Otros </label>
+                    </div>
+                    
                 </div>
 
                 <div class="formfields">
@@ -103,9 +111,17 @@
                     <label for="noticias"> Quiero recibir noticias de Cinecittà por email </label>
                 </div>
 
-                <div class="formfields">
-                    <h5>Genere su clave </h5>
-                    <input type="password" name="clave" size="25">
+                <div class="user-details">
+                    <div class="formfields">
+                        <label id="password" for="password">Contraseña:</label>
+                        <input size="35" type="text" name="password" id="password" placeholder="Ingrese su contraseña">
+                    </div>
+    
+                    <div class="formfields">
+                        <label for="password-confirm">Confirmar contraseña:</label>
+                        <input size="35" type="text" name="password-confirm" id="password-confirm" placeholder="Confirme su contraseña">
+                    </div>
+
                 </div>
 
                 <input type="submit" value="Enviar" />
