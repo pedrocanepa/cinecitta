@@ -61,6 +61,13 @@
     }
   };
 
+  var validarPassword = function (e) {
+    if (formregistro.password != formregistro.passwordConfirm) {
+      alert("Las contraseñas no coinciden");
+      e.preventDefault();
+    }
+  };
+
   var validar = function (e) {
     validarApellido(e);
     validarNombre(e);
@@ -69,6 +76,7 @@
     validarIdioma(e);
     validarCumpleanos(e);
     validarRadio(e);
+    validarPassword(e);
   };
   formregistro.addEventListener("submit", validar);
 }());
