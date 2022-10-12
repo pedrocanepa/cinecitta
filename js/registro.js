@@ -61,6 +61,31 @@
     }
   };
 
+  var validarPassword = function (e) {
+    if (formregistro.password.value == 0) {
+      alert("Completa el campo Contraseña");
+      e.preventDefault();
+    }
+  };
+
+  var validarPasswordConfirm = function (e) {
+    if (formregistro.passwordconfirm.value == 0) {
+      alert("Completa el campo Confirmar Contraseña");
+      e.preventDefault();
+    }
+  };
+
+  function onChange() {
+    const password = document.querySelector('input[name=password]');
+    const confirm = document.querySelector('input[name=passwordconfirm]');
+    if (confirm.value === password.value) {
+      confirm.setCustomValidity('');
+    } else {
+      confirm.setCustomValidity('Passwords do not match');
+    }
+  }
+
+
   var validar = function (e) {
     validarApellido(e);
     validarNombre(e);
@@ -69,28 +94,31 @@
     validarIdioma(e);
     validarCumpleanos(e);
     validarRadio(e);
+    validarPassword(e);
+    validarPasswordConfirm(e);
   };
+
   formregistro.addEventListener("submit", validar);
 }());
 
 
 // the form id is formregistro
-$('#formregistro').on('submit', function(event) {
+$('#formregistro').on('submit', function (event) {
   event.preventDefault(); // prevent reload
-  
+
   var formData = new FormData(formregistro);
   formData.append('service_id', 'default_service');
   formData.append('template_id', 'form_template');
   formData.append('user_id', 'zY7TNkCHihrWDPRlU');
 
   $.ajax('https://api.emailjs.com/api/v1.0/email/send-form', {
-      type: 'POST',
-      data: formData,
-      contentType: false, // auto-detection
-      processData: false // no need to parse formData to string
-  }).done(function() {
-      alert('Your mail is sent!');
-  }).fail(function(error) {
-      alert('Oops... ' + JSON.stringify(error));
+    type: 'POST',
+    data: formData,
+    contentType: false, // auto-detection
+    processData: false // no need to parse formData to string
+  }).done(function () {
+    alert('Your mail is sent!');
+  }).fail(function (error) {
+    alert('Oops... ' + JSON.stringify(error));
   });
 });
