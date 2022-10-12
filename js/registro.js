@@ -62,29 +62,11 @@
   };
 
   var validarPassword = function (e) {
-    if (formregistro.password.value == 0) {
-      alert("Completa el campo Contraseña");
+    if (formregistro.password != formregistro.passwordConfirm) {
+      alert("Las contraseñas no coinciden");
       e.preventDefault();
     }
   };
-
-  var validarPasswordConfirm = function (e) {
-    if (formregistro.passwordconfirm.value == 0) {
-      alert("Completa el campo Confirmar Contraseña");
-      e.preventDefault();
-    }
-  };
-
-  function onChange() {
-    const password = document.querySelector('input[name=password]');
-    const confirm = document.querySelector('input[name=passwordconfirm]');
-    if (confirm.value === password.value) {
-      confirm.setCustomValidity('');
-    } else {
-      confirm.setCustomValidity('Passwords do not match');
-    }
-  }
-
 
   var validar = function (e) {
     validarApellido(e);
@@ -95,7 +77,6 @@
     validarCumpleanos(e);
     validarRadio(e);
     validarPassword(e);
-    validarPasswordConfirm(e);
   };
 
   formregistro.addEventListener("submit", validar);
