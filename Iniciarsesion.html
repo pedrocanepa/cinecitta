@@ -22,20 +22,25 @@
     <main>
         <section id="iniciarsesion">
             <h2>¡Ingresá tus datos!</h2>
-            <form action="">
-                <div class="formfields">
-                    <label for="email">Email:</label>
-                    <input size="35" type="email" name="email" id="email" placeholder="Ingrese su dirección de email">
+            
+            <form action="" class="inicioSesion">
+                <div class="email">
+                    <div class="formfields">
+                        <label for="email">Email:</label>
+                        <input size="35" type="email" name="email" id="email" placeholder="Ingrese su dirección de email">
+                    </div>
                 </div>
-
-                <div class="formfields">
-                    <label for="password">Contraseña:</label>
-                    <input type="password" name="clave" size="30" placeholder="Ingrese su contraseña">
+                <div class="password">
+                    <div class="formfields">
+                        <label for="password">Contraseña:</label>
+                        <input type="password" name="clave" size="30" placeholder="Ingrese su contraseña">
+                    </div>
                 </div>
-                 <input type="submit" value="Enviar" />
-                <input type="submit" value="Borrar Formulario">
-               
+                <input type="submit" value="Enviar" class="botonEnviar"/>
+                <p class="registrar">¿Acaso no tenes una cuenta? <a href="registro.html" class="registrate">Registrate!</a></p>
+                
             </form>
+          
         </section>
     </main>
 
