@@ -20,7 +20,7 @@ document.getElementById("idheader").innerHTML = `
                 <a href="index.html#navegar">¿Qué hacer en CINECITTÀ?</a>
                 <a href="registro.html#registro">Registro</a>
                 <a href="iniciarsesion.html">Iniciar sesión</a>
-                <a href="Contacto.html">Contacto</a>
+                <a href="contacto.html">Contacto</a>
             
 
             </nav>
