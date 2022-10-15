@@ -12,25 +12,25 @@ html {
 /* Llamar a archivos de fuentes que están como "backup" por si Google Fonts falla */
 
 @font-face {
-    font-family: 'proxima_novabold';
+    font-family: 'Proxima Nova';
     src: url('./fonts/proximanova-bold-webfont.woff2') format('woff2'),
          url('./fonts/proximanova-bold-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'proxima_novabold_italic';
+    font-family: 'Proxima Nova';
     src: url('./fonts/proximanova-bolditalic-webfont.woff2') format('woff2'),
          url('./fonts/proximanova-bolditalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    font-weight: bold;
+    font-style: italic;
 
 }
 
 @font-face {
-    font-family: 'proxima_novaregular';
+    font-family: 'Proxima Nova';
     src: url('./fonts/proximanova-regular-webfont.woff2') format('woff2'),
          url('./fonts/proximanova-regular-webfont.woff') format('woff');
     font-weight: normal;
@@ -39,11 +39,11 @@ html {
 }
 
 @font-face {
-    font-family: 'proxima_novaitalic';
+    font-family: 'Proxima Nova';
     src: url('./fonts/proximanova-regularitalic-webfont.woff2') format('woff2'),
          url('./fonts/proximanova-regularitalic-webfont.woff') format('woff');
     font-weight: normal;
-    font-style: normal;
+    font-style: italic;
 
 }
 
