@@ -7,8 +7,51 @@ html {
     scroll-behavior: smooth;
 }
 
+
+
+/* Llamar a archivos de fuentes que están como "backup" por si Google Fonts falla */
+
+@font-face {
+    font-family: 'proxima_novabold';
+    src: url('./fonts/proximanova-bold-webfont.woff2') format('woff2'),
+         url('./fonts/proximanova-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'proxima_novabold_italic';
+    src: url('./fonts/proximanova-bolditalic-webfont.woff2') format('woff2'),
+         url('./fonts/proximanova-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'proxima_novaregular';
+    src: url('./fonts/proximanova-regular-webfont.woff2') format('woff2'),
+         url('./fonts/proximanova-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'proxima_novaitalic';
+    src: url('./fonts/proximanova-regularitalic-webfont.woff2') format('woff2'),
+         url('./fonts/proximanova-regularitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* Estilos generales del texto y botones */
+
 body {
-    font-family: 'Source Sans Pro', 'Roboto', sans-serif;
+    font-family: 'Proxima Nova', 'Source Sans Pro', 'Roboto', sans-serif;
     margin: 0;
     background-color: #002;
 }
