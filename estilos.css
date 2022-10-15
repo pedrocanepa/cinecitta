@@ -121,12 +121,6 @@ a:hover {
     color: #FFF;
 }
 
-
-/* .container {
-    max-width: 1400px;
-    margin: auto;
-} */
-
 .color-acento {
     color: #FFF;
 }
@@ -178,10 +172,6 @@ header .container {
     align-items: center;
 }
 
-/* header button {
-    display: none;
-} */
-
 header nav {
     display: flex;
     flex-direction: row;
@@ -211,7 +201,7 @@ header button {
 }
 
 
-/*Hamburger Menu*/
+/* Estilos para botón de menú hamburguesa en el Header */
 .nav {
     display: flex;
 }
@@ -235,9 +225,7 @@ header button {
 }
 
 footer
-
-/* nuevo  */
-    {
+{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -251,7 +239,7 @@ footer
 
 
 
-@media only screen and (min-width: 800px) {
+@media (min-width: 800px) {
 
     header {
         position: sticky;
@@ -275,7 +263,7 @@ footer
 
 }
 
-@media only screen and (max-width: 640px) {
+@media (max-width: 640px) {
     header nav {
         display: flex;
         flex-direction: column;
@@ -389,7 +377,7 @@ footer
 
 }
 
-@media only screen and (max-width: 720px) {
+@media (max-width: 720px) {
     #QuienesSomos .container {
         justify-content: center;
     }
@@ -453,7 +441,7 @@ footer
             rgba(0, 0, 0, 0.5)), url("./img/buscar.jpg");
 }
 
-@media only screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
     #navegar .opciones {
         display: flex;
         flex-direction: column;
@@ -538,13 +526,6 @@ footer
     font-weight: bold;
 }
 
-/* footer .mapa {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
-} */
-
 #mapa {
     border-radius: 25px;
     margin-top: 0vmin;
@@ -553,7 +534,7 @@ footer
     background-color: #002;
 }
 
-@media only screen and (max-width: 800px) {
+@media (max-width: 800px) {
     footer .container {
         display: flex;
         flex-direction: column;
@@ -616,7 +597,7 @@ footer
 
 }
 
-@media only screen and (max-width: 640px) {
+@media (max-width: 640px) {
     .navbar.active {
         display: flex;
     }
@@ -641,6 +622,7 @@ footer
         text-align: center;
     }
 }
+
 
 /* Registro.html */
 
@@ -882,7 +864,8 @@ main .resenas01 {
     align-items: center;
 }
 
-/* Navigation menu */
+
+/* Menú lateral de navegación en páginas de reseñas */
 
 .menu01 {
     background-color: #002;
@@ -931,6 +914,8 @@ main .resenas01 {
     line-height: 100%;
 }
 
+
+/* Estilos para el panel principal de películas en páginas de reseñas */
 
 #peliculas {
     display: flex;
