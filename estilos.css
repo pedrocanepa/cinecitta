@@ -733,6 +733,53 @@ form .preferencias .formfields {
     justify-content: space-between;
 }
 
+.radio{
+    width: 50%; 
+}
+
+@media (min-width: 640px) and (max-width: 800px) {
+    form{
+        width: 70%;
+    }
+    #registro form .user-details{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    form .user-details .formfields {
+        width: 80%;
+    }
+
+    .preferencias .formfields input{
+        width: 80%;
+    }
+}
+
+@media (max-width:640px) {
+    form{
+        width: 80%;
+    }
+
+    #registro form .user-details{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    form .user-details .formfields {
+        width: 100%;
+    }
+
+    .preferencias .formfields input{
+        width: 100%;
+    }
+}
+
 
 /* Iniciarsesion.html */
 
@@ -796,6 +843,18 @@ form .preferencias .formfields {
 
 .registrar{
     font-size: larger;
+}
+
+@media (min-width: 640px) and (max-width: 800px) {
+    .inicioSesion{
+        width: 60%;
+    }
+}
+
+@media (max-width:640px) {
+    .inicioSesion{
+        width: 80%;
+    }
 }
 
 
