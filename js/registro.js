@@ -2,7 +2,9 @@
 //Fuente: https://www.youtube.com/watch?v=VLFBHnkC-vc
 (function () {
   //Variables
-  var formregistro = document.getElementsByName('formregistro')[0];
+  var formregistro = document.getElementsByName('formregistro')[0],
+      elementos = formregistro.elements,
+      boton = document.getElementById('botonEnviar');
 
   var validarApellido = function (e) {
     if (formregistro.apellido.value == 0) {
