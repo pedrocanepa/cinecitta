@@ -1,39 +1,39 @@
 //Validación de un formulario con Javascript
 //Fuente: https://desarrolloweb.com/articulos/1767.php
 document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("formregistro").addEventListener('submit', validarFormulario);
+  document.getElementById('formregistro').addEventListener('submit', validarFormulario);
 });
 
 function validarFormulario(event) {
   event.preventDefault();
   var apellido = document.getElementById('apellido').value;
   if (apellido == 0) {
-    alert('Completa el campo Apellido');
+    alert("Completa el campo Apellido");
     return;
   }
   var nombre = document.getElementById('nombre').value;
   if (nombre == 0) {
-    alert('Completa el campo Nombre');
+    alert("Completa el campo Nombre");
     return;
   }
   var email = document.getElementById('email').value;
   if (email == 0) {
-    alert('Completa el campo Email');
+    alert("Completa el campo Email");
     return;
   }
   var cumpleanos = document.getElementById('cumpleanos').value;
   if (cumpleanos == 0) {
-    alert('Completa el campo Cumpleaños');
+    alert("Completa el campo Cumpleaños");
     return;
   }
   var genero = document.getElementById('genero').value;
   if (genero == 0) {
-    alert('Completa el campo Género');
+    alert("Completa el campo Género");
     return;
   }
   var idioma = document.getElementById('idioma').selectedIndex;
   if (idioma == 0) {
-    alert('Completa el campo Idioma');
+    alert("Completa el campo Idioma");
     return;
   }
   var redes = document.getElementsByName('redes').checked;
@@ -43,17 +43,17 @@ function validarFormulario(event) {
     redes[3] == true ||
     redes[4] == true ||
     redes[5] == true) {
-    alert('Completa el campo Redes');
+    alert("Completa el campo Redes");
     return;
   }
   var password = document.getElementById('password').value;
   if (password.length < 6) {
-    alert('La contraseña no es válida');
+    alert("La contraseña no es válida");
     return;
   }
   var passwordCheck = document.getElementById('passwordConfirm').value;
   if (passwordCheck != password) {
-    alert('Las contraseñas no coinciden');
+    alert("Las contraseñas no coinciden");
     return;
   }
   this.submit();
@@ -61,7 +61,7 @@ function validarFormulario(event) {
 
 
 // the form id is formregistro
-$('#formregistro').on('submit', function (event) {
+$('#formregistro').on("submit", function (event) {
   event.preventDefault(); // prevent reload
 
   var formData = new FormData(formregistro);
