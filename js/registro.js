@@ -61,22 +61,22 @@ function validarFormulario(evento) {
 
 
 // the form id is formregistro
-// $('#formregistro').on('submit', function (event) {
-//   event.preventDefault(); // prevent reload
+$('#formregistro').on('submit', function (event) {
+  event.preventDefault(); // prevent reload
 
-//   var formData = new FormData(formregistro);
-//   formData.append('service_id', 'default_service');
-//   formData.append('template_id', 'form_template');
-//   formData.append('user_id', 'zY7TNkCHihrWDPRlU');
+  var formData = new FormData(formregistro);
+  formData.append('service_id', 'default_service');
+  formData.append('template_id', 'form_template');
+  formData.append('user_id', 'zY7TNkCHihrWDPRlU');
 
-//   $.ajax('https://api.emailjs.com/api/v1.0/email/send-form', {
-//     type: 'POST',
-//     data: formData,
-//     contentType: false, // auto-detection
-//     processData: false // no need to parse formData to string
-//   }).done(function () {
-//     alert('Your mail is sent!');
-//   }).fail(function (error) {
-//     alert('Oops... ' + JSON.stringify(error));
-//   });
-// });
+  $.ajax('https://api.emailjs.com/api/v1.0/email/send-form', {
+    type: 'POST',
+    data: formData,
+    contentType: false, // auto-detection
+    processData: false // no need to parse formData to string
+  }).done(function () {
+    alert('Your mail is sent!');
+  }).fail(function (error) {
+    alert('Oops... ' + JSON.stringify(error));
+  });
+});

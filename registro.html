@@ -5,7 +5,8 @@
     <title>CINECITTÀ - Registro</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Proxima+Nova:b,i,bi|Source+Sans+Pro:b,i,bi|Roboto">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Proxima+Nova:b,i,bi|Source+Sans+Pro:b,i,bi|Roboto">
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
@@ -30,17 +31,18 @@
                         <label id="apellido" for="apellido">Apellido:</label>
                         <input size="35" type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido">
                     </div>
-    
+
                     <div class="formfields">
                         <label for="nombre">Nombre:</label>
                         <input size="35" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
                     </div>
-    
+
                     <div class="formfields">
                         <label for="email">Email:</label>
-                        <input size="35" type="email" name="email" id="email" placeholder="Ingrese su dirección de email">
+                        <input size="35" type="email" name="email" id="email"
+                            placeholder="Ingrese su dirección de email">
                     </div>
-    
+
                     <div class="formfields">
                         <label for="cumpleanos">Fecha de nacimiento:</label>
                         <input type="date" id="birthday" name="cumpleanos">
@@ -60,25 +62,25 @@
                             <option>Romántica</option>
                             <option>Terror</option>
                         </datalist>
-    
+
                     </div>
-    
+
                     <div class="formfields">
                         <label for="idioma">¿En qué idioma preferís ver las películas?</label>
                         <input type="text" name="idioma" list="idioma">
                         <datalist id="idioma">
-                            <option > Español</option>
-                            <option > Inglés</option>
-                            <option > Francés</option>
-                            <option > Portugués</option>
-                            <option > Italiano</option>
-                            <option > Alemán</option>
-                            <option > Japonés</option>
-                            <option > Chino</option>
-                        </select>
+                            <option> Español</option>
+                            <option> Inglés</option>
+                            <option> Francés</option>
+                            <option> Portugués</option>
+                            <option> Italiano</option>
+                            <option> Alemán</option>
+                            <option> Japonés</option>
+                            <option> Chino</option>
+                            </select>
                     </div>
                 </div>
-                
+
 
                 <div class="formfields">
                     <label>¿Cómo nos conociste?</label>
@@ -109,7 +111,7 @@
                         </div>
 
                     </div>
-                    
+
                 </div>
 
                 <div class="formfields">
@@ -120,23 +122,85 @@
                 <div class="user-details">
                     <div class="formfields">
                         <label id="password" for="password">Contraseña:</label>
-                        <input size="35" type="password" name="password" id="password" onChange="onChange()" placeholder="Ingrese su contraseña" required>
+                        <input size="35" type="password" name="password" id="password" onChange="onChange()"
+                            placeholder="Ingrese su contraseña" required>
                     </div>
-    
+
                     <div class="formfields">
                         <label for="passwordConfirm">Confirmar contraseña:</label>
-                        <input size="35" type="password" name="passwordConfirm" id="passwordConfirm" placeholder="Confirme su contraseña">
+                        <input size="35" type="password" name="passwordConfirm" id="passwordConfirm"
+                            placeholder="Confirme su contraseña">
                     </div>
 
                 </div>
 
-                <input type="submit" value="Enviar" class="botonEnviar" id="botonEnviar"/>
+                <input type="submit" value="Enviar" class="botonEnviar" id="botonEnviar" />
             </form>
         </section>
     </main>
 
     <footer id="idfooter"> </footer>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("formregistro").addEventListener('submit', validarFormulario);
+        });
+
+        function validarFormulario(evento) {
+            evento.preventDefault();
+            var apellido = document.getElementById('apellido').value;
+            if (apellido == 0) {
+                alert('Completa el campo Apellido');
+                return;
+            }
+            var nombre = document.getElementById('nombre').value;
+            if (nombre == 0) {
+                alert('Completa el campo Nombre');
+                return;
+            }
+            var email = document.getElementById('email').value;
+            if (email == 0) {
+                alert('Completa el campo Email');
+                return;
+            }
+            var cumpleanos = document.getElementById('cumpleanos').value;
+            if (cumpleanos == 0) {
+                alert('Completa el campo Cumpleaños');
+                return;
+            }
+            var genero = document.getElementById('genero').value;
+            if (genero == 0) {
+                alert('Completa el campo Género');
+                return;
+            }
+            var idioma = document.getElementById('idioma').selectedIndex;
+            if (idioma == 0) {
+                alert('Completa el campo Idioma');
+                return;
+            }
+            var redes = document.getElementsByName('redes').checked;
+            if (redes[0] == true ||
+                redes[1] == true ||
+                redes[2] == true ||
+                redes[3] == true ||
+                redes[4] == true ||
+                redes[5] == true) {
+                alert('Completa el campo Redes');
+                return;
+            }
+            var password = document.getElementById('password').value;
+            if (password.length < 6) {
+                alert('La contraseña no es válida');
+                return;
+            }
+            var passwordCheck = document.getElementById('passwordConfirm').value;
+            if (passwordCheck != password) {
+                alert('Las contraseñas no coinciden');
+                return;
+            }
+            this.submit();
+        }
+    </script>
     <script src="./js/headerfooter.js"></script>
 </body>
 
