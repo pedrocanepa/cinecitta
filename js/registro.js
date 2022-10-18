@@ -67,18 +67,10 @@
     if (formregistro.password.value == 0) {
       alert("Completa el campo Contraseña");
       e.preventDefault();
-    }
-  };
-
-  var validarPasswordConfirm = function (e) {
-    if (formregistro.passwordConfirm.value == 0) {
+    } else if (formregistro.passwordConfirm.value == 0) {
       alert("Completa el campo Confirmar Contraseña");
       e.preventDefault();
-    }
-  };
-
-  var validarPasswordCheck = function (e) {
-    if (formregistro.password != formregistro.passwordConfirm) {
+    } else if (formregistro.password.value != formregistro.passwordConfirm.value) {
       alert("Las contraseñas no coinciden");
       e.preventDefault();
     }
@@ -93,8 +85,6 @@
     validarCumpleanos(e);
     validarRadio(e);
     validarPassword(e);
-    validarPasswordConfirm(e);
-    validarPasswordCheck(e);
   };
 
   formregistro.addEventListener("submit", validar);
