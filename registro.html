@@ -28,30 +28,30 @@
                 <div class="user-details">
                     <div class="formfields">
                         <label id="apellido" for="apellido">Apellido:</label>
-                        <input size="35" type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido">
+                        <input size="35" type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido" required>
                     </div>
 
                     <div class="formfields">
                         <label for="nombre">Nombre:</label>
-                        <input size="35" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+                        <input size="35" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
                     </div>
 
                     <div class="formfields">
                         <label for="email">Email:</label>
                         <input size="35" type="email" name="email" id="email"
-                            placeholder="Ingrese su dirección de email">
+                            placeholder="Ingrese su dirección de email" required>
                     </div>
 
                     <div class="formfields">
                         <label for="cumpleanos">Fecha de nacimiento:</label>
-                        <input type="date" id="birthday" name="cumpleanos">
+                        <input type="date" id="birthday" name="cumpleanos" required>
                     </div>
                 </div>
 
                 <div class="preferencias">
                     <div class="formfields">
                         <label for="Cual genero prefieres"> ¿Cuál género preferís?</label>
-                        <input type="text" name="genero" list="genero">
+                        <input type="text" name="genero" list="genero" required>
                         <datalist id="genero">
                             <option>Acción</option>
                             <option>Ciencia Ficción</option>
@@ -66,7 +66,7 @@
 
                     <div class="formfields">
                         <label for="idioma">¿En qué idioma preferís ver las películas?</label>
-                        <input type="text" name="idioma" list="idioma">
+                        <input type="text" name="idioma" list="idioma" required>
                         <datalist id="idioma">
                             <option> Español</option>
                             <option> Inglés</option>
@@ -126,9 +126,9 @@
                     </div>
 
                     <div class="formfields">
-                        <label for="passwordConfirm">Confirmar contraseña:</label>
-                        <input size="35" type="password" name="passwordConfirm" id="passwordConfirm"
-                            placeholder="Confirme su contraseña">
+                        <label for="passwordconfirm">Confirmar contraseña:</label>
+                        <input size="35" type="password" name="passwordconfirm" id="passwordconfirm"
+                            placeholder="Confirme su contraseña" required>
                     </div>
 
                 </div>
