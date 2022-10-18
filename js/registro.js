@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("formregistro").addEventListener('submit', validarFormulario);
 });
 
-function validarFormulario(evento) {
-  evento.preventDefault();
+function validarFormulario(event) {
+  event.preventDefault();
   var apellido = document.getElementById('apellido').value;
   if (apellido == 0) {
     alert('Completa el campo Apellido');
