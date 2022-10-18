@@ -6,27 +6,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function validarFormulario(evento) {
   evento.preventDefault();
-  var apellido = document.getElementById('apellido');
+  var apellido = document.getElementById('apellido').value;
   if (apellido == 0) {
     alert('Completa el campo Apellido');
     return;
   }
-  var nombre = document.getElementById('nombre');
+  var nombre = document.getElementById('nombre').value;
   if (nombre == 0) {
     alert('Completa el campo Nombre');
     return;
   }
-  var email = document.getElementById('email');
+  var email = document.getElementById('email').value;
   if (email == 0) {
     alert('Completa el campo Email');
     return;
   }
-  var cumpleanos = document.getElementById('cumpleanos');
+  var cumpleanos = document.getElementById('cumpleanos').value;
   if (cumpleanos == 0) {
     alert('Completa el campo Cumpleaños');
     return;
   }
-  var genero = document.getElementById('genero');
+  var genero = document.getElementById('genero').value;
   if (genero == 0) {
     alert('Completa el campo Género');
     return;
