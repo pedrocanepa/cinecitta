@@ -70,7 +70,7 @@
     } else if (formregistro.passwordconfirm.value == 0) {
       alert("Completa el campo Confirmar Contraseña");
       e.preventDefault();
-    } else if (formregistro.password != formregistro.passwordconfirm) {
+    } else if (formregistro.password.value != formregistro.passwordconfirm.value) {
       alert("Las contraseñas no coinciden");
       e.preventDefault();
     }
