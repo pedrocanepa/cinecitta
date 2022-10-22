@@ -939,14 +939,36 @@ main .resenas01 {
 }
 
 .menu01 #menutitle {
+    display: flex;
+    font-family: 'Proxima Nova', 'Source Sans Pro', 'Roboto', sans-serif;
+    width: 90%;
+    margin: auto;
     justify-content: center;
     align-items: center;
     text-align: center;
     background-color: #910;
-    margin: 0 3vmin 0;
-    padding: 0.1vmin;
+    color: #FFF;
     border-radius: 25px;
     line-height: 250%;
+    cursor: pointer;
+    text-shadow: 1px 1px 4px black;
+    /* border-bottom: 2vmin solid #002; */
+}
+
+.menu01 #menualt {
+    display: flex;
+    font-family: 'Proxima Nova', 'Source Sans Pro', 'Roboto', sans-serif;
+    width: 90%;
+    margin: 3vmin auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #003;
+    color: #FFF;
+    border-radius: 25px;
+    line-height: 250%;
+    cursor: pointer;
+    text-shadow: 1px 1px 4px black;
     /* border-bottom: 2vmin solid #002; */
 }
 
@@ -958,8 +980,14 @@ main .resenas01 {
     color: #FFF;
 }
 
+.menu01 #menualt:hover {
+    background-color: #F60;
+}
 
 .sidenav {
+    display: flex;
+    width: 90%;
+    margin: 3vmin auto auto auto;
     flex-direction: column;
     justify-content: flex-start;
     align-items: initial;
@@ -968,15 +996,17 @@ main .resenas01 {
     list-style-type: none;
     overflow-x: hidden;
     /* Disable horizontal scroll */
-    padding: 1vmin 5vmin;
+    padding: 2vmin 4vmin;
     background-color: #113;
     border-radius: 25px;
-    margin: 3vmin 3vmin 0;
+    /* margin: 3vmin 3vmin 0; */
 }
 
 .sidenav p {
     font-size: 2.5vmin;
     line-height: 100%;
+    margin: 1.2vmin 0;
+    padding: auto;
 }
 
 
