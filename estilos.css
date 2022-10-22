@@ -881,7 +881,7 @@ form .preferencias .formfields {
 
     #peliculas {
         flex-basis: calc(70%);
-        padding-bottom: 20vmin;
+        /* padding-bottom: 20vmin; */
     }
 
     #peliculas h2 {
@@ -903,7 +903,7 @@ form .preferencias .formfields {
 
     #peliculas {
         flex-basis: calc(75%);
-        padding-bottom: 20vmin;
+        /* padding-bottom: 20vmin; */
     }
 
     #peliculas h2 {
@@ -1327,7 +1327,7 @@ figcaption {
 	margin: 4vmin 2vmin 10vmin;
     padding: 2vmin;
 	display: grid;
-	grid-template-columns: repeat(auto-fill,20%);
+	grid-template-columns: repeat(auto-fill,25%);
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -1376,7 +1376,7 @@ figcaption {
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	height: 10vmin;
+	height: 8vmin;
 	width: 40vmin;
 	background: #241744;
 	color: #fff;
@@ -1389,4 +1389,16 @@ figcaption {
 
 .paginacion button:hover {
 	background: #137c32;
+}
+
+@media (max-width:1000px) {
+    .contenedor {
+        grid-template-columns: repeat(auto-fill,33%);
+    }
+}
+
+@media (max-width:800px) {
+    .contenedor {
+        grid-template-columns: repeat(auto-fill,50%);
+    }
 }
