@@ -93,6 +93,7 @@ a {
 a:hover {
     text-decoration: none;
     color: #F60;
+    transition: .3s ease all;
 }
 
 .basicbtn {
@@ -110,6 +111,7 @@ a:hover {
 .basicbtn:hover {
     background-color: #F60;
     cursor: pointer;
+    transition: .3s ease all;
 }
 
 .basicbtn a {
@@ -119,6 +121,7 @@ a:hover {
 
 .basicbtn a:hover {
     color: #FFF;
+    transition: .3s ease all;
 }
 
 .color-acento {
@@ -190,6 +193,7 @@ header a {
 
 header a:hover {
     color: #F60;
+    transition: .3s ease all;
 }
 
 header a:active {
@@ -840,6 +844,7 @@ form .preferencias .formfields {
 .botonEnviar:hover {
     background-color: #F60;
     cursor: pointer;
+    transition: .3s ease all;
 }
 
 .registrate{
@@ -974,14 +979,17 @@ main .resenas01 {
 
 .menu01 #menutitle:hover {
     background-color: #F60;
+    transition: .3s ease all;
 }
 
 #menutitle a:hover {
     color: #FFF;
+    transition: .3s ease all;
 }
 
 .menu01 #menualt:hover {
     background-color: #F60;
+    transition: .3s ease all;
 }
 
 .sidenav {
@@ -1049,6 +1057,7 @@ main .resenas01 {
 #peliculas .resenas:hover {
     box-shadow: 1vmax 2vmin #F60;
     transform: scale(1.1, 1.1);
+    transition: .3s ease all;
 }
 
 figcaption {
@@ -1233,6 +1242,7 @@ figcaption {
 .accordionactive, .accordion:hover {
     background-color: #f60;
     font-weight: bold;
+    transition: .3s ease all;
   }
 
 .accordionactive {
