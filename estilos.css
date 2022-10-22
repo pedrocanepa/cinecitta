@@ -941,6 +941,7 @@ main .resenas01 {
     margin: 0 3vmin 0;
     padding: 0.1vmin;
     border-radius: 25px;
+    line-height: 250%;
     /* border-bottom: 2vmin solid #002; */
 }
 
