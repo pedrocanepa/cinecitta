@@ -1005,7 +1005,7 @@ main .resenas01 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    flex-direction: row;
+    flex-direction: column;
     border-radius: 15px;
     background-color: rgba(0, 0, 17, 0.7);
 }
@@ -1323,39 +1323,50 @@ figcaption {
 /* Películas más populares */
 
 .contenedor {
-	width: 90%;
-	max-width: 1000px;
-	margin: 40px auto 100px auto;
-
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	gap: 40px;
-}
-
-.contenedor .pelicula {
-	text-align: center;
-}
-
-.contenedor .pelicula .titulo {
-	font-size: 16px;
-	font-weight: 600;
-}
-
-.contenedor .pelicula .poster {
 	width: 100%;
-	margin-bottom: 10px;
-	border-radius: 15px;
+	margin: 4vmin 2vmin 10vmin;
+    padding: 2vmin;
+	display: grid;
+	grid-template-columns: repeat(auto-fill,20%);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+	gap: auto;
+    /* display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+	width: 100%;
+    max-width: 75vw;
+	margin: 4vmin 2vmin 10vmin 2vmin;
+    padding: 2vmin;
+    gap: auto; */
 }
+
+.contenedor .titulo {
+    width: 12.5vw;
+    min-width: 150px;
+	font-size: medium;
+    font-weight: unset;
+}
+
+/* .contenedor .pelicula .poster {
+	width: 12.5vw;
+	margin-bottom: 2vmin;
+	border-radius: 15px;
+} */
 
 .paginacion {
-	position: fixed;
+	position: sticky;
 	bottom: 0;
 	background: #100a1f;
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	gap: 20px;
-	padding: 10px;
+	gap: 4vmin;
+	padding: 2vmin;
+    z-index: 10;
 }
 
 .paginacion button {
@@ -1365,13 +1376,14 @@ figcaption {
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	height: 50px;
-	width: 200px;
+	height: 10vmin;
+	width: 40vmin;
 	background: #241744;
 	color: #fff;
 	border-radius: 100px;
 	font-family: 'Proxima Nova', 'Source Sans Pro', 'Roboto', sans-serif;
-	font-weight: 600;
+	font-size: 3vmin;
+    font-weight: bold;
 	transition: .3s ease all;
 }
 
